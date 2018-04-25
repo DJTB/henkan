@@ -17,14 +17,15 @@ export const I_ADJECTIVE = {
     ければ: 'provisional',
     くて: 'conjunctive',
     く: 'adverbial',
-    そう: 'seems to be', // FIXME: よい => よさそう == isYoiEdgeCase ? `さ${form}` : form)
-    くない: 'negative', // -> i-adj
+    そう: 'seems to be', // FIXME: よい => よさそう == isYoiEdgeCase ? `さ${form}` : form) // -> adj-na
+    くない: 'negative', // -> adj-i
     くなかった: 'negative past',
     くなかったら: 'negative conditional',
     くなければ: 'negative provisional',
     くなくて: 'negative conjunctive',
     なさそう: 'negative seems to be',
     かろう: 'tentative',
+    すぎる: 'excess', // -> v1
   },
 };
 
