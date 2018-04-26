@@ -12,14 +12,6 @@ const fixtures = {
   v1: { word: '食べる', desc: '-る -ru' },
 };
 
-describe('conjugate', () => {
-  it('inflect defaults to v5', () => {
-    expect(inflect('帰る')).toMatchSnapshot();
-  });
-
-  fixtures.forEach(({ type, word, desc }) => {
-    it(`inflects ${word} ${type} ${desc}`, () => {
-      expect(inflect(word, type)).toMatchSnapshot();
-    });
-  });
+describe('inflect', () => {
+  it.fail('has no tests yet', () => {});
 });

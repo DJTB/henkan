@@ -1,11 +1,13 @@
-# 発音 hatsuon
+# 変換 henkan
 
-> Japanese pitch accent tools
+> Japanese inflector
 
-[![npm](https://img.shields.io/npm/v/hatsuon.svg?style=flat-square)](https://www.npmjs.com/package/hatsuon)
-[![npm](https://img.shields.io/npm/dt/hatsuon.svg?style=flat-square)](https://npm-stat.com/charts.html?package=hatsuon&from=2016-04-01)
-[![Travis branch](https://img.shields.io/travis/DJTB/hatsuon/master.svg?style=flat-square)](https://travis-ci.org/DJTB/hatsuon)
-[![Codecov branch](https://img.shields.io/codecov/c/github/DJTB/hatsuon/master.svg?style=flat-square)](https://codecov.io/github/DJTB/hatsuon)
+### --WIP--
+
+[![npm](https://img.shields.io/npm/v/henkan.svg?style=flat-square)](https://www.npmjs.com/package/henkan)
+[![npm](https://img.shields.io/npm/dt/henkan.svg?style=flat-square)](https://npm-stat.com/charts.html?package=henkan&from=2016-04-01)
+[![Travis branch](https://img.shields.io/travis/DJTB/henkan/master.svg?style=flat-square)](https://travis-ci.org/DJTB/henkan)
+[![Codecov branch](https://img.shields.io/codecov/c/github/DJTB/henkan/master.svg?style=flat-square)](https://codecov.io/github/DJTB/henkan)
 <br />
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=flat-square)](http://commitizen.github.io/cz-cli/)
 [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
@@ -13,47 +15,23 @@
 
 ## Why?
 
-Japanese dictionaries often display the pitch accent of a word with a single number that determines where the pitch falls. This can be difficult to mentally visualize without counting through the [mora](<https://en.wikipedia.org/wiki/Mora_(linguistics)#Japanese>) of the word. This library provides useful tools for generating pitch patterns which can then be easily displayed via SVG.
+Originally used to find various conjugated verbs/adjectives in example sentences and highlight them for [KaniWani](https://github.com/Kaniwani/kw-frontend) using their dictionary form as a starting reference.
 
 ## Installation
 
 ```sh
-npm install --save hatsuon
+npm install --save henkan
 ```
 
 ## Demo
 
-[Visualization Example](https://djtb.github.io/hatsuon)
+// TODO
 
 ## Usage
 
 ```js
-import hatsuon from 'hatsuon';
-
-hatsuon({ reading: 'ちゅうがっこう', pitchNum: 3 });
-// =>
-{
-  reading: 'ちゅうがっこう',
-  pitchNum: 3,
-  morae: ['ちゅ', 'う', 'が', 'っ', 'こ', 'う'],
-  // low, high, high, low, low, low, low*
-  // *following particle (は、が, の etc) pitch
-  pattern: [0, 1, 1, 0, 0, 0, 0],
-  patternName: '中高', // nakadaka
-}
-```
-
-Extra available utils (see source for documentation):
-
-```js
-import {
-  isDigraph,
-  getMorae,
-  getMoraCount,
-  makePitchPattern,
-  getPitchPatternName,
-  getPitchNumFromPattern,
-} from 'hatsuon/dist/utils';
+import henkan from 'henkan';
+// TODO
 ```
 
 ## Related
@@ -67,7 +45,7 @@ Thanks goes to these people ([emoji key](https://github.com/kentcdodds/all-contr
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 
 <!-- prettier-ignore -->
-| [<img src="https://avatars3.githubusercontent.com/u/5353151?s=100" width="100px;"/><br /><sub><b>Duncan Bay</b></sub>](https://github.com/DJTB)<br />[💻](https://github.com/DJTB/hatsuon/commits?author=DJTB "Code") [📖](https://github.com/DJTB/hatsuon/commits?author=DJTB "Documentation") [🚇](#infra-DJTB "Infrastructure (Hosting, Build-Tools, etc)") [🎨](#design-DJTB "Design") |
+| [<img src="https://avatars3.githubusercontent.com/u/5353151?s=100" width="100px;"/><br /><sub><b>Duncan Bay</b></sub>](https://github.com/DJTB)<br />[💻](https://github.com/DJTB/henkan/commits?author=DJTB "Code") [📖](https://github.com/DJTB/henkan/commits?author=DJTB "Documentation") [🚇](#infra-DJTB "Infrastructure (Hosting, Build-Tools, etc)") [🎨](#design-DJTB "Design") |
 | :---: |
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->

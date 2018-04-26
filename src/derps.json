@@ -1,0 +1,1924 @@
+[
+  { "value": "示す", "path": ["PLAIN"] },
+  { "value": "示し", "path": ["CONJUNCTIVE"] },
+  {
+    "value": "示したい",
+    "desc": "speaker's desire",
+    "tag": "adj-i",
+    "path": ["CONJUNCTIVE", "TAI"]
+  },
+  {
+    "value": "示したがる",
+    "desc": "non-speaker's desire",
+    "tag": "v5r",
+    "path": ["CONJUNCTIVE", "TAGARU"],
+    "derivationsToCheck": [
+      { "value": "示したがる", "path": ["CONJUNCTIVE", "TAGARU", "PLAIN"] },
+      { "value": "示したがり", "path": ["CONJUNCTIVE", "TAGARU", "CONJUNCTIVE"] },
+      {
+        "value": "示したがりたい",
+        "desc": "speaker's desire",
+        "tag": "adj-i",
+        "path": ["CONJUNCTIVE", "TAGARU", "CONJUNCTIVE", "TAI"]
+      },
+      {
+        "value": "示したがりたがる",
+        "desc": "non-speaker's desire",
+        "tag": "v5r",
+        "path": ["CONJUNCTIVE", "TAGARU", "CONJUNCTIVE", "TAGARU"]
+      },
+      {
+        "value": "示したがりながら",
+        "desc": "while ~ing",
+        "path": ["CONJUNCTIVE", "TAGARU", "CONJUNCTIVE", "NAGARA"]
+      },
+      {
+        "value": "示したがりがち",
+        "desc": "tends to ~",
+        "path": ["CONJUNCTIVE", "TAGARU", "CONJUNCTIVE", "GACHI"]
+      },
+      {
+        "value": "示したがりかた",
+        "desc": "way of ~ing",
+        "path": ["CONJUNCTIVE", "TAGARU", "CONJUNCTIVE", "KATA"]
+      },
+      {
+        "value": "示したがりそう",
+        "desc": "looks to be ~",
+        "path": ["CONJUNCTIVE", "TAGARU", "CONJUNCTIVE", "SOU"]
+      },
+      {
+        "value": "示したがりつつ",
+        "desc": "continuing to ~",
+        "path": ["CONJUNCTIVE", "TAGARU", "CONJUNCTIVE", "TSUTSU"]
+      },
+      {
+        "value": "示したがりやがる",
+        "desc": "yakuza rude",
+        "tag": "v5r",
+        "path": ["CONJUNCTIVE", "TAGARU", "CONJUNCTIVE", "YAGARU"]
+      },
+      {
+        "value": "示したがりすぎる",
+        "desc": "excess ~",
+        "tag": "v1",
+        "path": ["CONJUNCTIVE", "TAGARU", "CONJUNCTIVE", "SUGIRU"]
+      },
+      {
+        "value": "示したがりやすい",
+        "desc": "easy to ~",
+        "tag": "adj-i",
+        "path": ["CONJUNCTIVE", "TAGARU", "CONJUNCTIVE", "YASUI"]
+      },
+      {
+        "value": "示したがりにくい",
+        "desc": "difficult to ~",
+        "tag": "adj-i",
+        "path": ["CONJUNCTIVE", "TAGARU", "CONJUNCTIVE", "NIKUI"]
+      },
+      {
+        "value": "示したがります",
+        "desc": "non-past",
+        "path": ["CONJUNCTIVE", "TAGARU", "POLITE", "MASU"]
+      },
+      {
+        "value": "示したがりません",
+        "desc": "negative",
+        "path": ["CONJUNCTIVE", "TAGARU", "POLITE", "MASEN"]
+      },
+      {
+        "value": "示したがりませぬ",
+        "desc": "negative, archaic",
+        "path": ["CONJUNCTIVE", "TAGARU", "POLITE", "MASENU"]
+      },
+      {
+        "value": "示したがりました",
+        "desc": "past",
+        "path": ["CONJUNCTIVE", "TAGARU", "POLITE", "MASHITA"]
+      },
+      {
+        "value": "示したがりましょう",
+        "desc": "volitional",
+        "path": ["CONJUNCTIVE", "TAGARU", "POLITE", "MASHOU"]
+      },
+      {
+        "value": "示したがりまして",
+        "desc": "conjunctive",
+        "path": ["CONJUNCTIVE", "TAGARU", "POLITE", "MASHITE"]
+      },
+      {
+        "value": "示したがりますれば",
+        "desc": "conditional",
+        "path": ["CONJUNCTIVE", "TAGARU", "POLITE", "MASUREBA"]
+      },
+      {
+        "value": "示したがりなさい",
+        "desc": "authoritative",
+        "path": ["CONJUNCTIVE", "TAGARU", "POLITE", "NASAI"]
+      },
+      {
+        "value": "示したがりな",
+        "desc": "imperative informal",
+        "path": ["CONJUNCTIVE", "TAGARU", "POLITE", "NA"]
+      },
+      { "value": "示したがら", "path": ["CONJUNCTIVE", "TAGARU", "IMPERFECTIVE"] },
+      {
+        "value": "示したがらない",
+        "desc": "negative",
+        "tag": "adj-i",
+        "path": ["CONJUNCTIVE", "TAGARU", "IMPERFECTIVE", "NAI"]
+      },
+      {
+        "value": "示したがらん",
+        "desc": "curt negative, informal, archaic",
+        "path": ["CONJUNCTIVE", "TAGARU", "IMPERFECTIVE", "N"]
+      },
+      {
+        "value": "示したがらず",
+        "desc": "negative perfect",
+        "path": ["CONJUNCTIVE", "TAGARU", "IMPERFECTIVE", "ZU"]
+      },
+      {
+        "value": "示したがらないで",
+        "desc": "without ~ing",
+        "path": ["CONJUNCTIVE", "TAGARU", "IMPERFECTIVE", "NAIDE"]
+      },
+      {
+        "value": "示したがらずに",
+        "desc": "without ~ing, formal",
+        "path": ["CONJUNCTIVE", "TAGARU", "IMPERFECTIVE", "ZUNI"]
+      },
+      {
+        "value": "示したがらなくて",
+        "desc": "negative て form",
+        "path": ["CONJUNCTIVE", "TAGARU", "IMPERFECTIVE", "TE"]
+      },
+      {
+        "value": "示したがらなかった",
+        "desc": "negative た form",
+        "path": ["CONJUNCTIVE", "TAGARU", "IMPERFECTIVE", "TA"]
+      },
+      {
+        "value": "示したがらなければ",
+        "desc": "negative conditional",
+        "path": ["CONJUNCTIVE", "TAGARU", "IMPERFECTIVE", "CONDITIONAL"]
+      },
+      {
+        "value": "示したがらなきゃ",
+        "desc": "obligation, informal",
+        "path": ["CONJUNCTIVE", "TAGARU", "IMPERFECTIVE", "NAKYA"]
+      },
+      {
+        "value": "示したがらなくちゃ",
+        "desc": "obligation, informal",
+        "path": ["CONJUNCTIVE", "TAGARU", "IMPERFECTIVE", "NAKUCHA"]
+      },
+      {
+        "value": "示したがられる",
+        "desc": "passive",
+        "tag": "v1",
+        "path": ["CONJUNCTIVE", "TAGARU", "IMPERFECTIVE", "PASSIVE"]
+      },
+      {
+        "value": "示したがらせる",
+        "desc": "causative",
+        "tag": "v1",
+        "path": ["CONJUNCTIVE", "TAGARU", "IMPERFECTIVE", "CAUSATIVE"]
+      },
+      {
+        "value": "示したがらせられる",
+        "desc": "causative passive",
+        "tag": "v1",
+        "path": ["CONJUNCTIVE", "TAGARU", "IMPERFECTIVE", "CAUSATIVE_PASSIVE"]
+      },
+      {
+        "value": "示したがらす",
+        "desc": "causative alternative",
+        "tag": "v5s",
+        "path": ["CONJUNCTIVE", "TAGARU", "IMPERFECTIVE", "CAUSATIVE_ALT"]
+      },
+      {
+        "value": "示したがらされる",
+        "desc": "causative passive alternative",
+        "tag": "v1",
+        "path": ["CONJUNCTIVE", "TAGARU", "IMPERFECTIVE", "CAUSATIVE_PASSIVE_ALT"]
+      },
+      { "value": "示したがれ", "path": ["CONJUNCTIVE", "TAGARU", "IMPERATIVE"] },
+      { "value": "示したがれば", "path": ["CONJUNCTIVE", "TAGARU", "CONDITIONAL"] },
+      { "value": "示したがれる", "path": ["CONJUNCTIVE", "TAGARU", "POTENTIAL"], "tag": "v1" },
+      { "value": "示したがろう", "path": ["CONJUNCTIVE", "TAGARU", "VOLITIONAL"] },
+      { "value": "示したがって", "path": ["CONJUNCTIVE", "TAGARU", "TE"] },
+      { "value": "示したがった", "path": ["CONJUNCTIVE", "TAGARU", "TA"] },
+      {
+        "value": "示したがったり",
+        "desc": "representative",
+        "path": ["CONJUNCTIVE", "TAGARU", "TA", "RI"]
+      },
+      {
+        "value": "示したがったら",
+        "desc": "if/when ~",
+        "path": ["CONJUNCTIVE", "TAGARU", "TA", "RA"]
+      },
+      {
+        "value": "示したがったろう",
+        "desc": "past volitional, rare",
+        "path": ["CONJUNCTIVE", "TAGARU", "TA", "ROU"]
+      }
+    ]
+  },
+  { "value": "示しながら", "desc": "while ~ing", "path": ["CONJUNCTIVE", "NAGARA"] },
+  { "value": "示しがち", "desc": "tends to ~", "path": ["CONJUNCTIVE", "GACHI"] },
+  { "value": "示しかた", "desc": "way of ~ing", "path": ["CONJUNCTIVE", "KATA"] },
+  { "value": "示しそう", "desc": "looks to be ~", "path": ["CONJUNCTIVE", "SOU"] },
+  { "value": "示しつつ", "desc": "continuing to ~", "path": ["CONJUNCTIVE", "TSUTSU"] },
+  {
+    "value": "示しやがる",
+    "desc": "yakuza rude",
+    "tag": "v5r",
+    "path": ["CONJUNCTIVE", "YAGARU"],
+    "derivationsToCheck": [
+      { "value": "示しやがる", "path": ["CONJUNCTIVE", "YAGARU", "PLAIN"] },
+      { "value": "示しやがり", "path": ["CONJUNCTIVE", "YAGARU", "CONJUNCTIVE"] },
+      {
+        "value": "示しやがりたい",
+        "desc": "speaker's desire",
+        "tag": "adj-i",
+        "path": ["CONJUNCTIVE", "YAGARU", "CONJUNCTIVE", "TAI"]
+      },
+      {
+        "value": "示しやがりたがる",
+        "desc": "non-speaker's desire",
+        "tag": "v5r",
+        "path": ["CONJUNCTIVE", "YAGARU", "CONJUNCTIVE", "TAGARU"]
+      },
+      {
+        "value": "示しやがりながら",
+        "desc": "while ~ing",
+        "path": ["CONJUNCTIVE", "YAGARU", "CONJUNCTIVE", "NAGARA"]
+      },
+      {
+        "value": "示しやがりがち",
+        "desc": "tends to ~",
+        "path": ["CONJUNCTIVE", "YAGARU", "CONJUNCTIVE", "GACHI"]
+      },
+      {
+        "value": "示しやがりかた",
+        "desc": "way of ~ing",
+        "path": ["CONJUNCTIVE", "YAGARU", "CONJUNCTIVE", "KATA"]
+      },
+      {
+        "value": "示しやがりそう",
+        "desc": "looks to be ~",
+        "path": ["CONJUNCTIVE", "YAGARU", "CONJUNCTIVE", "SOU"]
+      },
+      {
+        "value": "示しやがりつつ",
+        "desc": "continuing to ~",
+        "path": ["CONJUNCTIVE", "YAGARU", "CONJUNCTIVE", "TSUTSU"]
+      },
+      {
+        "value": "示しやがりやがる",
+        "desc": "yakuza rude",
+        "tag": "v5r",
+        "path": ["CONJUNCTIVE", "YAGARU", "CONJUNCTIVE", "YAGARU"]
+      },
+      {
+        "value": "示しやがりすぎる",
+        "desc": "excess ~",
+        "tag": "v1",
+        "path": ["CONJUNCTIVE", "YAGARU", "CONJUNCTIVE", "SUGIRU"]
+      },
+      {
+        "value": "示しやがりやすい",
+        "desc": "easy to ~",
+        "tag": "adj-i",
+        "path": ["CONJUNCTIVE", "YAGARU", "CONJUNCTIVE", "YASUI"]
+      },
+      {
+        "value": "示しやがりにくい",
+        "desc": "difficult to ~",
+        "tag": "adj-i",
+        "path": ["CONJUNCTIVE", "YAGARU", "CONJUNCTIVE", "NIKUI"]
+      },
+      {
+        "value": "示しやがります",
+        "desc": "non-past",
+        "path": ["CONJUNCTIVE", "YAGARU", "POLITE", "MASU"]
+      },
+      {
+        "value": "示しやがりません",
+        "desc": "negative",
+        "path": ["CONJUNCTIVE", "YAGARU", "POLITE", "MASEN"]
+      },
+      {
+        "value": "示しやがりませぬ",
+        "desc": "negative, archaic",
+        "path": ["CONJUNCTIVE", "YAGARU", "POLITE", "MASENU"]
+      },
+      {
+        "value": "示しやがりました",
+        "desc": "past",
+        "path": ["CONJUNCTIVE", "YAGARU", "POLITE", "MASHITA"]
+      },
+      {
+        "value": "示しやがりましょう",
+        "desc": "volitional",
+        "path": ["CONJUNCTIVE", "YAGARU", "POLITE", "MASHOU"]
+      },
+      {
+        "value": "示しやがりまして",
+        "desc": "conjunctive",
+        "path": ["CONJUNCTIVE", "YAGARU", "POLITE", "MASHITE"]
+      },
+      {
+        "value": "示しやがりますれば",
+        "desc": "conditional",
+        "path": ["CONJUNCTIVE", "YAGARU", "POLITE", "MASUREBA"]
+      },
+      {
+        "value": "示しやがりなさい",
+        "desc": "authoritative",
+        "path": ["CONJUNCTIVE", "YAGARU", "POLITE", "NASAI"]
+      },
+      {
+        "value": "示しやがりな",
+        "desc": "imperative informal",
+        "path": ["CONJUNCTIVE", "YAGARU", "POLITE", "NA"]
+      },
+      { "value": "示しやがら", "path": ["CONJUNCTIVE", "YAGARU", "IMPERFECTIVE"] },
+      {
+        "value": "示しやがらない",
+        "desc": "negative",
+        "tag": "adj-i",
+        "path": ["CONJUNCTIVE", "YAGARU", "IMPERFECTIVE", "NAI"]
+      },
+      {
+        "value": "示しやがらん",
+        "desc": "curt negative, informal, archaic",
+        "path": ["CONJUNCTIVE", "YAGARU", "IMPERFECTIVE", "N"]
+      },
+      {
+        "value": "示しやがらず",
+        "desc": "negative perfect",
+        "path": ["CONJUNCTIVE", "YAGARU", "IMPERFECTIVE", "ZU"]
+      },
+      {
+        "value": "示しやがらないで",
+        "desc": "without ~ing",
+        "path": ["CONJUNCTIVE", "YAGARU", "IMPERFECTIVE", "NAIDE"]
+      },
+      {
+        "value": "示しやがらずに",
+        "desc": "without ~ing, formal",
+        "path": ["CONJUNCTIVE", "YAGARU", "IMPERFECTIVE", "ZUNI"]
+      },
+      {
+        "value": "示しやがらなくて",
+        "desc": "negative て form",
+        "path": ["CONJUNCTIVE", "YAGARU", "IMPERFECTIVE", "TE"]
+      },
+      {
+        "value": "示しやがらなかった",
+        "desc": "negative た form",
+        "path": ["CONJUNCTIVE", "YAGARU", "IMPERFECTIVE", "TA"]
+      },
+      {
+        "value": "示しやがらなければ",
+        "desc": "negative conditional",
+        "path": ["CONJUNCTIVE", "YAGARU", "IMPERFECTIVE", "CONDITIONAL"]
+      },
+      {
+        "value": "示しやがらなきゃ",
+        "desc": "obligation, informal",
+        "path": ["CONJUNCTIVE", "YAGARU", "IMPERFECTIVE", "NAKYA"]
+      },
+      {
+        "value": "示しやがらなくちゃ",
+        "desc": "obligation, informal",
+        "path": ["CONJUNCTIVE", "YAGARU", "IMPERFECTIVE", "NAKUCHA"]
+      },
+      {
+        "value": "示しやがられる",
+        "desc": "passive",
+        "tag": "v1",
+        "path": ["CONJUNCTIVE", "YAGARU", "IMPERFECTIVE", "PASSIVE"]
+      },
+      {
+        "value": "示しやがらせる",
+        "desc": "causative",
+        "tag": "v1",
+        "path": ["CONJUNCTIVE", "YAGARU", "IMPERFECTIVE", "CAUSATIVE"]
+      },
+      {
+        "value": "示しやがらせられる",
+        "desc": "causative passive",
+        "tag": "v1",
+        "path": ["CONJUNCTIVE", "YAGARU", "IMPERFECTIVE", "CAUSATIVE_PASSIVE"]
+      },
+      {
+        "value": "示しやがらす",
+        "desc": "causative alternative",
+        "tag": "v5s",
+        "path": ["CONJUNCTIVE", "YAGARU", "IMPERFECTIVE", "CAUSATIVE_ALT"]
+      },
+      {
+        "value": "示しやがらされる",
+        "desc": "causative passive alternative",
+        "tag": "v1",
+        "path": ["CONJUNCTIVE", "YAGARU", "IMPERFECTIVE", "CAUSATIVE_PASSIVE_ALT"]
+      },
+      { "value": "示しやがれ", "path": ["CONJUNCTIVE", "YAGARU", "IMPERATIVE"] },
+      { "value": "示しやがれば", "path": ["CONJUNCTIVE", "YAGARU", "CONDITIONAL"] },
+      { "value": "示しやがれる", "path": ["CONJUNCTIVE", "YAGARU", "POTENTIAL"], "tag": "v1" },
+      { "value": "示しやがろう", "path": ["CONJUNCTIVE", "YAGARU", "VOLITIONAL"] },
+      { "value": "示しやがって", "path": ["CONJUNCTIVE", "YAGARU", "TE"] },
+      { "value": "示しやがった", "path": ["CONJUNCTIVE", "YAGARU", "TA"] },
+      {
+        "value": "示しやがったり",
+        "desc": "representative",
+        "path": ["CONJUNCTIVE", "YAGARU", "TA", "RI"]
+      },
+      {
+        "value": "示しやがったら",
+        "desc": "if/when ~",
+        "path": ["CONJUNCTIVE", "YAGARU", "TA", "RA"]
+      },
+      {
+        "value": "示しやがったろう",
+        "desc": "past volitional, rare",
+        "path": ["CONJUNCTIVE", "YAGARU", "TA", "ROU"]
+      }
+    ]
+  },
+  {
+    "value": "示しすぎる",
+    "desc": "excess ~",
+    "tag": "v1",
+    "path": ["CONJUNCTIVE", "SUGIRU"],
+    "derivationsToCheck": [
+      { "value": "示しすぎる", "path": ["CONJUNCTIVE", "SUGIRU", "PLAIN"] },
+      { "value": "示しすぎ", "path": ["CONJUNCTIVE", "SUGIRU", "CONJUNCTIVE"] },
+      {
+        "value": "示しすぎたい",
+        "desc": "speaker's desire",
+        "tag": "adj-i",
+        "path": ["CONJUNCTIVE", "SUGIRU", "CONJUNCTIVE", "TAI"]
+      },
+      {
+        "value": "示しすぎたがる",
+        "desc": "non-speaker's desire",
+        "tag": "v5r",
+        "path": ["CONJUNCTIVE", "SUGIRU", "CONJUNCTIVE", "TAGARU"]
+      },
+      {
+        "value": "示しすぎながら",
+        "desc": "while ~ing",
+        "path": ["CONJUNCTIVE", "SUGIRU", "CONJUNCTIVE", "NAGARA"]
+      },
+      {
+        "value": "示しすぎがち",
+        "desc": "tends to ~",
+        "path": ["CONJUNCTIVE", "SUGIRU", "CONJUNCTIVE", "GACHI"]
+      },
+      {
+        "value": "示しすぎかた",
+        "desc": "way of ~ing",
+        "path": ["CONJUNCTIVE", "SUGIRU", "CONJUNCTIVE", "KATA"]
+      },
+      {
+        "value": "示しすぎそう",
+        "desc": "looks to be ~",
+        "path": ["CONJUNCTIVE", "SUGIRU", "CONJUNCTIVE", "SOU"]
+      },
+      {
+        "value": "示しすぎつつ",
+        "desc": "continuing to ~",
+        "path": ["CONJUNCTIVE", "SUGIRU", "CONJUNCTIVE", "TSUTSU"]
+      },
+      {
+        "value": "示しすぎやがる",
+        "desc": "yakuza rude",
+        "tag": "v5r",
+        "path": ["CONJUNCTIVE", "SUGIRU", "CONJUNCTIVE", "YAGARU"]
+      },
+      {
+        "value": "示しすぎすぎる",
+        "desc": "excess ~",
+        "tag": "v1",
+        "path": ["CONJUNCTIVE", "SUGIRU", "CONJUNCTIVE", "SUGIRU"]
+      },
+      {
+        "value": "示しすぎやすい",
+        "desc": "easy to ~",
+        "tag": "adj-i",
+        "path": ["CONJUNCTIVE", "SUGIRU", "CONJUNCTIVE", "YASUI"]
+      },
+      {
+        "value": "示しすぎにくい",
+        "desc": "difficult to ~",
+        "tag": "adj-i",
+        "path": ["CONJUNCTIVE", "SUGIRU", "CONJUNCTIVE", "NIKUI"]
+      },
+      {
+        "value": "示しすぎます",
+        "desc": "non-past",
+        "path": ["CONJUNCTIVE", "SUGIRU", "POLITE", "MASU"]
+      },
+      {
+        "value": "示しすぎません",
+        "desc": "negative",
+        "path": ["CONJUNCTIVE", "SUGIRU", "POLITE", "MASEN"]
+      },
+      {
+        "value": "示しすぎませぬ",
+        "desc": "negative, archaic",
+        "path": ["CONJUNCTIVE", "SUGIRU", "POLITE", "MASENU"]
+      },
+      {
+        "value": "示しすぎました",
+        "desc": "past",
+        "path": ["CONJUNCTIVE", "SUGIRU", "POLITE", "MASHITA"]
+      },
+      {
+        "value": "示しすぎましょう",
+        "desc": "volitional",
+        "path": ["CONJUNCTIVE", "SUGIRU", "POLITE", "MASHOU"]
+      },
+      {
+        "value": "示しすぎまして",
+        "desc": "conjunctive",
+        "path": ["CONJUNCTIVE", "SUGIRU", "POLITE", "MASHITE"]
+      },
+      {
+        "value": "示しすぎますれば",
+        "desc": "conditional",
+        "path": ["CONJUNCTIVE", "SUGIRU", "POLITE", "MASUREBA"]
+      },
+      {
+        "value": "示しすぎなさい",
+        "desc": "authoritative",
+        "path": ["CONJUNCTIVE", "SUGIRU", "POLITE", "NASAI"]
+      },
+      {
+        "value": "示しすぎな",
+        "desc": "imperative informal",
+        "path": ["CONJUNCTIVE", "SUGIRU", "POLITE", "NA"]
+      },
+      {
+        "value": "示しすぎない",
+        "desc": "negative",
+        "tag": "adj-i",
+        "path": ["CONJUNCTIVE", "SUGIRU", "IMPERFECTIVE", "NAI"]
+      },
+      {
+        "value": "示しすぎん",
+        "desc": "curt negative, informal, archaic",
+        "path": ["CONJUNCTIVE", "SUGIRU", "IMPERFECTIVE", "N"]
+      },
+      {
+        "value": "示しすぎず",
+        "desc": "negative perfect",
+        "path": ["CONJUNCTIVE", "SUGIRU", "IMPERFECTIVE", "ZU"]
+      },
+      {
+        "value": "示しすぎないで",
+        "desc": "without ~ing",
+        "path": ["CONJUNCTIVE", "SUGIRU", "IMPERFECTIVE", "NAIDE"]
+      },
+      {
+        "value": "示しすぎずに",
+        "desc": "without ~ing, formal",
+        "path": ["CONJUNCTIVE", "SUGIRU", "IMPERFECTIVE", "ZUNI"]
+      },
+      {
+        "value": "示しすぎなくて",
+        "desc": "negative て form",
+        "path": ["CONJUNCTIVE", "SUGIRU", "IMPERFECTIVE", "TE"]
+      },
+      {
+        "value": "示しすぎなかった",
+        "desc": "negative た form",
+        "path": ["CONJUNCTIVE", "SUGIRU", "IMPERFECTIVE", "TA"]
+      },
+      {
+        "value": "示しすぎなければ",
+        "desc": "negative conditional",
+        "path": ["CONJUNCTIVE", "SUGIRU", "IMPERFECTIVE", "CONDITIONAL"]
+      },
+      {
+        "value": "示しすぎなきゃ",
+        "desc": "obligation, informal",
+        "path": ["CONJUNCTIVE", "SUGIRU", "IMPERFECTIVE", "NAKYA"]
+      },
+      {
+        "value": "示しすぎなくちゃ",
+        "desc": "obligation, informal",
+        "path": ["CONJUNCTIVE", "SUGIRU", "IMPERFECTIVE", "NAKUCHA"]
+      },
+      {
+        "value": "示しすぎられる",
+        "desc": "passive",
+        "tag": "v1",
+        "path": ["CONJUNCTIVE", "SUGIRU", "IMPERFECTIVE", "PASSIVE"]
+      },
+      {
+        "value": "示しすぎさせる",
+        "desc": "causative",
+        "tag": "v1",
+        "path": ["CONJUNCTIVE", "SUGIRU", "IMPERFECTIVE", "CAUSATIVE"]
+      },
+      {
+        "value": "示しすぎさせられる",
+        "desc": "causative passive",
+        "tag": "v1",
+        "path": ["CONJUNCTIVE", "SUGIRU", "IMPERFECTIVE", "CAUSATIVE_PASSIVE"]
+      },
+      {
+        "value": "示しすぎさす",
+        "desc": "causative alternative",
+        "tag": "v5s",
+        "path": ["CONJUNCTIVE", "SUGIRU", "IMPERFECTIVE", "CAUSATIVE_ALT"]
+      },
+      { "value": "示しすぎろ", "path": ["CONJUNCTIVE", "SUGIRU", "IMPERATIVE"] },
+      { "value": "示しすぎれば", "path": ["CONJUNCTIVE", "SUGIRU", "CONDITIONAL"] },
+      { "value": "示しすぎよう", "path": ["CONJUNCTIVE", "SUGIRU", "VOLITIONAL"] },
+      { "value": "示しすぎて", "path": ["CONJUNCTIVE", "SUGIRU", "TE"] },
+      { "value": "示しすぎた", "path": ["CONJUNCTIVE", "SUGIRU", "TA"] },
+      {
+        "value": "示しすぎたり",
+        "desc": "representative",
+        "path": ["CONJUNCTIVE", "SUGIRU", "TA", "RI"]
+      },
+      {
+        "value": "示しすぎたら",
+        "desc": "if/when ~",
+        "path": ["CONJUNCTIVE", "SUGIRU", "TA", "RA"]
+      },
+      {
+        "value": "示しすぎたろう",
+        "desc": "past volitional, rare",
+        "path": ["CONJUNCTIVE", "SUGIRU", "TA", "ROU"]
+      }
+    ]
+  },
+  { "value": "示しやすい", "desc": "easy to ~", "tag": "adj-i", "path": ["CONJUNCTIVE", "YASUI"] },
+  {
+    "value": "示しにくい",
+    "desc": "difficult to ~",
+    "tag": "adj-i",
+    "path": ["CONJUNCTIVE", "NIKUI"]
+  },
+  { "value": "示します", "desc": "non-past", "path": ["POLITE", "MASU"] },
+  { "value": "示しません", "desc": "negative", "path": ["POLITE", "MASEN"] },
+  { "value": "示しませぬ", "desc": "negative, archaic", "path": ["POLITE", "MASENU"] },
+  { "value": "示しました", "desc": "past", "path": ["POLITE", "MASHITA"] },
+  { "value": "示しましょう", "desc": "volitional", "path": ["POLITE", "MASHOU"] },
+  { "value": "示しまして", "desc": "conjunctive", "path": ["POLITE", "MASHITE"] },
+  { "value": "示しますれば", "desc": "conditional", "path": ["POLITE", "MASUREBA"] },
+  { "value": "示しなさい", "desc": "authoritative", "path": ["POLITE", "NASAI"] },
+  { "value": "示しな", "desc": "imperative informal", "path": ["POLITE", "NA"] },
+  { "value": "示さ", "path": ["IMPERFECTIVE"] },
+  { "value": "示さない", "desc": "negative", "tag": "adj-i", "path": ["IMPERFECTIVE", "NAI"] },
+  { "value": "示さん", "desc": "curt negative, informal, archaic", "path": ["IMPERFECTIVE", "N"] },
+  { "value": "示さず", "desc": "negative perfect", "path": ["IMPERFECTIVE", "ZU"] },
+  { "value": "示さないで", "desc": "without ~ing", "path": ["IMPERFECTIVE", "NAIDE"] },
+  { "value": "示さずに", "desc": "without ~ing, formal", "path": ["IMPERFECTIVE", "ZUNI"] },
+  { "value": "示さなくて", "desc": "negative て form", "path": ["IMPERFECTIVE", "TE"] },
+  { "value": "示さなかった", "desc": "negative た form", "path": ["IMPERFECTIVE", "TA"] },
+  {
+    "value": "示さなければ",
+    "desc": "negative conditional",
+    "path": ["IMPERFECTIVE", "CONDITIONAL"]
+  },
+  { "value": "示さなきゃ", "desc": "obligation, informal", "path": ["IMPERFECTIVE", "NAKYA"] },
+  { "value": "示さなくちゃ", "desc": "obligation, informal", "path": ["IMPERFECTIVE", "NAKUCHA"] },
+  {
+    "value": "示される",
+    "desc": "passive",
+    "tag": "v1",
+    "path": ["IMPERFECTIVE", "PASSIVE"],
+    "derivationsToCheck": [
+      { "value": "示される", "path": ["IMPERFECTIVE", "PASSIVE", "PLAIN"] },
+      { "value": "示され", "path": ["IMPERFECTIVE", "PASSIVE", "CONJUNCTIVE"] },
+      {
+        "value": "示されたい",
+        "desc": "speaker's desire",
+        "tag": "adj-i",
+        "path": ["IMPERFECTIVE", "PASSIVE", "CONJUNCTIVE", "TAI"]
+      },
+      {
+        "value": "示されたがる",
+        "desc": "non-speaker's desire",
+        "tag": "v5r",
+        "path": ["IMPERFECTIVE", "PASSIVE", "CONJUNCTIVE", "TAGARU"]
+      },
+      {
+        "value": "示されながら",
+        "desc": "while ~ing",
+        "path": ["IMPERFECTIVE", "PASSIVE", "CONJUNCTIVE", "NAGARA"]
+      },
+      {
+        "value": "示されがち",
+        "desc": "tends to ~",
+        "path": ["IMPERFECTIVE", "PASSIVE", "CONJUNCTIVE", "GACHI"]
+      },
+      {
+        "value": "示されかた",
+        "desc": "way of ~ing",
+        "path": ["IMPERFECTIVE", "PASSIVE", "CONJUNCTIVE", "KATA"]
+      },
+      {
+        "value": "示されそう",
+        "desc": "looks to be ~",
+        "path": ["IMPERFECTIVE", "PASSIVE", "CONJUNCTIVE", "SOU"]
+      },
+      {
+        "value": "示されつつ",
+        "desc": "continuing to ~",
+        "path": ["IMPERFECTIVE", "PASSIVE", "CONJUNCTIVE", "TSUTSU"]
+      },
+      {
+        "value": "示されやがる",
+        "desc": "yakuza rude",
+        "tag": "v5r",
+        "path": ["IMPERFECTIVE", "PASSIVE", "CONJUNCTIVE", "YAGARU"]
+      },
+      {
+        "value": "示されすぎる",
+        "desc": "excess ~",
+        "tag": "v1",
+        "path": ["IMPERFECTIVE", "PASSIVE", "CONJUNCTIVE", "SUGIRU"]
+      },
+      {
+        "value": "示されやすい",
+        "desc": "easy to ~",
+        "tag": "adj-i",
+        "path": ["IMPERFECTIVE", "PASSIVE", "CONJUNCTIVE", "YASUI"]
+      },
+      {
+        "value": "示されにくい",
+        "desc": "difficult to ~",
+        "tag": "adj-i",
+        "path": ["IMPERFECTIVE", "PASSIVE", "CONJUNCTIVE", "NIKUI"]
+      },
+      {
+        "value": "示されます",
+        "desc": "non-past",
+        "path": ["IMPERFECTIVE", "PASSIVE", "POLITE", "MASU"]
+      },
+      {
+        "value": "示されません",
+        "desc": "negative",
+        "path": ["IMPERFECTIVE", "PASSIVE", "POLITE", "MASEN"]
+      },
+      {
+        "value": "示されませぬ",
+        "desc": "negative, archaic",
+        "path": ["IMPERFECTIVE", "PASSIVE", "POLITE", "MASENU"]
+      },
+      {
+        "value": "示されました",
+        "desc": "past",
+        "path": ["IMPERFECTIVE", "PASSIVE", "POLITE", "MASHITA"]
+      },
+      {
+        "value": "示されましょう",
+        "desc": "volitional",
+        "path": ["IMPERFECTIVE", "PASSIVE", "POLITE", "MASHOU"]
+      },
+      {
+        "value": "示されまして",
+        "desc": "conjunctive",
+        "path": ["IMPERFECTIVE", "PASSIVE", "POLITE", "MASHITE"]
+      },
+      {
+        "value": "示されますれば",
+        "desc": "conditional",
+        "path": ["IMPERFECTIVE", "PASSIVE", "POLITE", "MASUREBA"]
+      },
+      {
+        "value": "示されなさい",
+        "desc": "authoritative",
+        "path": ["IMPERFECTIVE", "PASSIVE", "POLITE", "NASAI"]
+      },
+      {
+        "value": "示されな",
+        "desc": "imperative informal",
+        "path": ["IMPERFECTIVE", "PASSIVE", "POLITE", "NA"]
+      },
+      {
+        "value": "示されない",
+        "desc": "negative",
+        "tag": "adj-i",
+        "path": ["IMPERFECTIVE", "PASSIVE", "IMPERFECTIVE", "NAI"]
+      },
+      {
+        "value": "示されん",
+        "desc": "curt negative, informal, archaic",
+        "path": ["IMPERFECTIVE", "PASSIVE", "IMPERFECTIVE", "N"]
+      },
+      {
+        "value": "示されず",
+        "desc": "negative perfect",
+        "path": ["IMPERFECTIVE", "PASSIVE", "IMPERFECTIVE", "ZU"]
+      },
+      {
+        "value": "示されないで",
+        "desc": "without ~ing",
+        "path": ["IMPERFECTIVE", "PASSIVE", "IMPERFECTIVE", "NAIDE"]
+      },
+      {
+        "value": "示されずに",
+        "desc": "without ~ing, formal",
+        "path": ["IMPERFECTIVE", "PASSIVE", "IMPERFECTIVE", "ZUNI"]
+      },
+      {
+        "value": "示されなくて",
+        "desc": "negative て form",
+        "path": ["IMPERFECTIVE", "PASSIVE", "IMPERFECTIVE", "TE"]
+      },
+      {
+        "value": "示されなかった",
+        "desc": "negative た form",
+        "path": ["IMPERFECTIVE", "PASSIVE", "IMPERFECTIVE", "TA"]
+      },
+      {
+        "value": "示されなければ",
+        "desc": "negative conditional",
+        "path": ["IMPERFECTIVE", "PASSIVE", "IMPERFECTIVE", "CONDITIONAL"]
+      },
+      {
+        "value": "示されなきゃ",
+        "desc": "obligation, informal",
+        "path": ["IMPERFECTIVE", "PASSIVE", "IMPERFECTIVE", "NAKYA"]
+      },
+      {
+        "value": "示されなくちゃ",
+        "desc": "obligation, informal",
+        "path": ["IMPERFECTIVE", "PASSIVE", "IMPERFECTIVE", "NAKUCHA"]
+      },
+      {
+        "value": "示されられる",
+        "desc": "passive",
+        "tag": "v1",
+        "path": ["IMPERFECTIVE", "PASSIVE", "IMPERFECTIVE", "PASSIVE"]
+      },
+      {
+        "value": "示されさせる",
+        "desc": "causative",
+        "tag": "v1",
+        "path": ["IMPERFECTIVE", "PASSIVE", "IMPERFECTIVE", "CAUSATIVE"]
+      },
+      {
+        "value": "示されさせられる",
+        "desc": "causative passive",
+        "tag": "v1",
+        "path": ["IMPERFECTIVE", "PASSIVE", "IMPERFECTIVE", "CAUSATIVE_PASSIVE"]
+      },
+      {
+        "value": "示されさす",
+        "desc": "causative alternative",
+        "tag": "v5s",
+        "path": ["IMPERFECTIVE", "PASSIVE", "IMPERFECTIVE", "CAUSATIVE_ALT"]
+      },
+      { "value": "示されろ", "path": ["IMPERFECTIVE", "PASSIVE", "IMPERATIVE"] },
+      { "value": "示されれば", "path": ["IMPERFECTIVE", "PASSIVE", "CONDITIONAL"] },
+      { "value": "示されよう", "path": ["IMPERFECTIVE", "PASSIVE", "VOLITIONAL"] },
+      { "value": "示されて", "path": ["IMPERFECTIVE", "PASSIVE", "TE"] },
+      { "value": "示された", "path": ["IMPERFECTIVE", "PASSIVE", "TA"] },
+      {
+        "value": "示されたり",
+        "desc": "representative",
+        "path": ["IMPERFECTIVE", "PASSIVE", "TA", "RI"]
+      },
+      {
+        "value": "示されたら",
+        "desc": "if/when ~",
+        "path": ["IMPERFECTIVE", "PASSIVE", "TA", "RA"]
+      },
+      {
+        "value": "示されたろう",
+        "desc": "past volitional, rare",
+        "path": ["IMPERFECTIVE", "PASSIVE", "TA", "ROU"]
+      }
+    ]
+  },
+  {
+    "value": "示させる",
+    "desc": "causative",
+    "tag": "v1",
+    "path": ["IMPERFECTIVE", "CAUSATIVE"],
+    "derivationsToCheck": [
+      { "value": "示させる", "path": ["IMPERFECTIVE", "CAUSATIVE", "PLAIN"] },
+      { "value": "示させ", "path": ["IMPERFECTIVE", "CAUSATIVE", "CONJUNCTIVE"] },
+      {
+        "value": "示させたい",
+        "desc": "speaker's desire",
+        "tag": "adj-i",
+        "path": ["IMPERFECTIVE", "CAUSATIVE", "CONJUNCTIVE", "TAI"]
+      },
+      {
+        "value": "示させたがる",
+        "desc": "non-speaker's desire",
+        "tag": "v5r",
+        "path": ["IMPERFECTIVE", "CAUSATIVE", "CONJUNCTIVE", "TAGARU"]
+      },
+      {
+        "value": "示させながら",
+        "desc": "while ~ing",
+        "path": ["IMPERFECTIVE", "CAUSATIVE", "CONJUNCTIVE", "NAGARA"]
+      },
+      {
+        "value": "示させがち",
+        "desc": "tends to ~",
+        "path": ["IMPERFECTIVE", "CAUSATIVE", "CONJUNCTIVE", "GACHI"]
+      },
+      {
+        "value": "示させかた",
+        "desc": "way of ~ing",
+        "path": ["IMPERFECTIVE", "CAUSATIVE", "CONJUNCTIVE", "KATA"]
+      },
+      {
+        "value": "示させそう",
+        "desc": "looks to be ~",
+        "path": ["IMPERFECTIVE", "CAUSATIVE", "CONJUNCTIVE", "SOU"]
+      },
+      {
+        "value": "示させつつ",
+        "desc": "continuing to ~",
+        "path": ["IMPERFECTIVE", "CAUSATIVE", "CONJUNCTIVE", "TSUTSU"]
+      },
+      {
+        "value": "示させやがる",
+        "desc": "yakuza rude",
+        "tag": "v5r",
+        "path": ["IMPERFECTIVE", "CAUSATIVE", "CONJUNCTIVE", "YAGARU"]
+      },
+      {
+        "value": "示させすぎる",
+        "desc": "excess ~",
+        "tag": "v1",
+        "path": ["IMPERFECTIVE", "CAUSATIVE", "CONJUNCTIVE", "SUGIRU"]
+      },
+      {
+        "value": "示させやすい",
+        "desc": "easy to ~",
+        "tag": "adj-i",
+        "path": ["IMPERFECTIVE", "CAUSATIVE", "CONJUNCTIVE", "YASUI"]
+      },
+      {
+        "value": "示させにくい",
+        "desc": "difficult to ~",
+        "tag": "adj-i",
+        "path": ["IMPERFECTIVE", "CAUSATIVE", "CONJUNCTIVE", "NIKUI"]
+      },
+      {
+        "value": "示させます",
+        "desc": "non-past",
+        "path": ["IMPERFECTIVE", "CAUSATIVE", "POLITE", "MASU"]
+      },
+      {
+        "value": "示させません",
+        "desc": "negative",
+        "path": ["IMPERFECTIVE", "CAUSATIVE", "POLITE", "MASEN"]
+      },
+      {
+        "value": "示させませぬ",
+        "desc": "negative, archaic",
+        "path": ["IMPERFECTIVE", "CAUSATIVE", "POLITE", "MASENU"]
+      },
+      {
+        "value": "示させました",
+        "desc": "past",
+        "path": ["IMPERFECTIVE", "CAUSATIVE", "POLITE", "MASHITA"]
+      },
+      {
+        "value": "示させましょう",
+        "desc": "volitional",
+        "path": ["IMPERFECTIVE", "CAUSATIVE", "POLITE", "MASHOU"]
+      },
+      {
+        "value": "示させまして",
+        "desc": "conjunctive",
+        "path": ["IMPERFECTIVE", "CAUSATIVE", "POLITE", "MASHITE"]
+      },
+      {
+        "value": "示させますれば",
+        "desc": "conditional",
+        "path": ["IMPERFECTIVE", "CAUSATIVE", "POLITE", "MASUREBA"]
+      },
+      {
+        "value": "示させなさい",
+        "desc": "authoritative",
+        "path": ["IMPERFECTIVE", "CAUSATIVE", "POLITE", "NASAI"]
+      },
+      {
+        "value": "示させな",
+        "desc": "imperative informal",
+        "path": ["IMPERFECTIVE", "CAUSATIVE", "POLITE", "NA"]
+      },
+      {
+        "value": "示させない",
+        "desc": "negative",
+        "tag": "adj-i",
+        "path": ["IMPERFECTIVE", "CAUSATIVE", "IMPERFECTIVE", "NAI"]
+      },
+      {
+        "value": "示させん",
+        "desc": "curt negative, informal, archaic",
+        "path": ["IMPERFECTIVE", "CAUSATIVE", "IMPERFECTIVE", "N"]
+      },
+      {
+        "value": "示させず",
+        "desc": "negative perfect",
+        "path": ["IMPERFECTIVE", "CAUSATIVE", "IMPERFECTIVE", "ZU"]
+      },
+      {
+        "value": "示させないで",
+        "desc": "without ~ing",
+        "path": ["IMPERFECTIVE", "CAUSATIVE", "IMPERFECTIVE", "NAIDE"]
+      },
+      {
+        "value": "示させずに",
+        "desc": "without ~ing, formal",
+        "path": ["IMPERFECTIVE", "CAUSATIVE", "IMPERFECTIVE", "ZUNI"]
+      },
+      {
+        "value": "示させなくて",
+        "desc": "negative て form",
+        "path": ["IMPERFECTIVE", "CAUSATIVE", "IMPERFECTIVE", "TE"]
+      },
+      {
+        "value": "示させなかった",
+        "desc": "negative た form",
+        "path": ["IMPERFECTIVE", "CAUSATIVE", "IMPERFECTIVE", "TA"]
+      },
+      {
+        "value": "示させなければ",
+        "desc": "negative conditional",
+        "path": ["IMPERFECTIVE", "CAUSATIVE", "IMPERFECTIVE", "CONDITIONAL"]
+      },
+      {
+        "value": "示させなきゃ",
+        "desc": "obligation, informal",
+        "path": ["IMPERFECTIVE", "CAUSATIVE", "IMPERFECTIVE", "NAKYA"]
+      },
+      {
+        "value": "示させなくちゃ",
+        "desc": "obligation, informal",
+        "path": ["IMPERFECTIVE", "CAUSATIVE", "IMPERFECTIVE", "NAKUCHA"]
+      },
+      {
+        "value": "示させられる",
+        "desc": "passive",
+        "tag": "v1",
+        "path": ["IMPERFECTIVE", "CAUSATIVE", "IMPERFECTIVE", "PASSIVE"]
+      },
+      {
+        "value": "示させさせる",
+        "desc": "causative",
+        "tag": "v1",
+        "path": ["IMPERFECTIVE", "CAUSATIVE", "IMPERFECTIVE", "CAUSATIVE"]
+      },
+      {
+        "value": "示させさせられる",
+        "desc": "causative passive",
+        "tag": "v1",
+        "path": ["IMPERFECTIVE", "CAUSATIVE", "IMPERFECTIVE", "CAUSATIVE_PASSIVE"]
+      },
+      {
+        "value": "示させさす",
+        "desc": "causative alternative",
+        "tag": "v5s",
+        "path": ["IMPERFECTIVE", "CAUSATIVE", "IMPERFECTIVE", "CAUSATIVE_ALT"]
+      },
+      { "value": "示させろ", "path": ["IMPERFECTIVE", "CAUSATIVE", "IMPERATIVE"] },
+      { "value": "示させれば", "path": ["IMPERFECTIVE", "CAUSATIVE", "CONDITIONAL"] },
+      { "value": "示させよう", "path": ["IMPERFECTIVE", "CAUSATIVE", "VOLITIONAL"] },
+      { "value": "示させて", "path": ["IMPERFECTIVE", "CAUSATIVE", "TE"] },
+      { "value": "示させた", "path": ["IMPERFECTIVE", "CAUSATIVE", "TA"] },
+      {
+        "value": "示させたり",
+        "desc": "representative",
+        "path": ["IMPERFECTIVE", "CAUSATIVE", "TA", "RI"]
+      },
+      {
+        "value": "示させたら",
+        "desc": "if/when ~",
+        "path": ["IMPERFECTIVE", "CAUSATIVE", "TA", "RA"]
+      },
+      {
+        "value": "示させたろう",
+        "desc": "past volitional, rare",
+        "path": ["IMPERFECTIVE", "CAUSATIVE", "TA", "ROU"]
+      }
+    ]
+  },
+  {
+    "value": "示させられる",
+    "desc": "causative passive",
+    "tag": "v1",
+    "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE"],
+    "derivationsToCheck": [
+      { "value": "示させられる", "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE", "PLAIN"] },
+      { "value": "示させられ", "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE", "CONJUNCTIVE"] },
+      {
+        "value": "示させられたい",
+        "desc": "speaker's desire",
+        "tag": "adj-i",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE", "CONJUNCTIVE", "TAI"]
+      },
+      {
+        "value": "示させられたがる",
+        "desc": "non-speaker's desire",
+        "tag": "v5r",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE", "CONJUNCTIVE", "TAGARU"]
+      },
+      {
+        "value": "示させられながら",
+        "desc": "while ~ing",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE", "CONJUNCTIVE", "NAGARA"]
+      },
+      {
+        "value": "示させられがち",
+        "desc": "tends to ~",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE", "CONJUNCTIVE", "GACHI"]
+      },
+      {
+        "value": "示させられかた",
+        "desc": "way of ~ing",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE", "CONJUNCTIVE", "KATA"]
+      },
+      {
+        "value": "示させられそう",
+        "desc": "looks to be ~",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE", "CONJUNCTIVE", "SOU"]
+      },
+      {
+        "value": "示させられつつ",
+        "desc": "continuing to ~",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE", "CONJUNCTIVE", "TSUTSU"]
+      },
+      {
+        "value": "示させられやがる",
+        "desc": "yakuza rude",
+        "tag": "v5r",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE", "CONJUNCTIVE", "YAGARU"]
+      },
+      {
+        "value": "示させられすぎる",
+        "desc": "excess ~",
+        "tag": "v1",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE", "CONJUNCTIVE", "SUGIRU"]
+      },
+      {
+        "value": "示させられやすい",
+        "desc": "easy to ~",
+        "tag": "adj-i",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE", "CONJUNCTIVE", "YASUI"]
+      },
+      {
+        "value": "示させられにくい",
+        "desc": "difficult to ~",
+        "tag": "adj-i",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE", "CONJUNCTIVE", "NIKUI"]
+      },
+      {
+        "value": "示させられます",
+        "desc": "non-past",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE", "POLITE", "MASU"]
+      },
+      {
+        "value": "示させられません",
+        "desc": "negative",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE", "POLITE", "MASEN"]
+      },
+      {
+        "value": "示させられませぬ",
+        "desc": "negative, archaic",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE", "POLITE", "MASENU"]
+      },
+      {
+        "value": "示させられました",
+        "desc": "past",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE", "POLITE", "MASHITA"]
+      },
+      {
+        "value": "示させられましょう",
+        "desc": "volitional",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE", "POLITE", "MASHOU"]
+      },
+      {
+        "value": "示させられまして",
+        "desc": "conjunctive",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE", "POLITE", "MASHITE"]
+      },
+      {
+        "value": "示させられますれば",
+        "desc": "conditional",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE", "POLITE", "MASUREBA"]
+      },
+      {
+        "value": "示させられなさい",
+        "desc": "authoritative",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE", "POLITE", "NASAI"]
+      },
+      {
+        "value": "示させられな",
+        "desc": "imperative informal",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE", "POLITE", "NA"]
+      },
+      {
+        "value": "示させられない",
+        "desc": "negative",
+        "tag": "adj-i",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE", "IMPERFECTIVE", "NAI"]
+      },
+      {
+        "value": "示させられん",
+        "desc": "curt negative, informal, archaic",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE", "IMPERFECTIVE", "N"]
+      },
+      {
+        "value": "示させられず",
+        "desc": "negative perfect",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE", "IMPERFECTIVE", "ZU"]
+      },
+      {
+        "value": "示させられないで",
+        "desc": "without ~ing",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE", "IMPERFECTIVE", "NAIDE"]
+      },
+      {
+        "value": "示させられずに",
+        "desc": "without ~ing, formal",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE", "IMPERFECTIVE", "ZUNI"]
+      },
+      {
+        "value": "示させられなくて",
+        "desc": "negative て form",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE", "IMPERFECTIVE", "TE"]
+      },
+      {
+        "value": "示させられなかった",
+        "desc": "negative た form",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE", "IMPERFECTIVE", "TA"]
+      },
+      {
+        "value": "示させられなければ",
+        "desc": "negative conditional",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE", "IMPERFECTIVE", "CONDITIONAL"]
+      },
+      {
+        "value": "示させられなきゃ",
+        "desc": "obligation, informal",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE", "IMPERFECTIVE", "NAKYA"]
+      },
+      {
+        "value": "示させられなくちゃ",
+        "desc": "obligation, informal",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE", "IMPERFECTIVE", "NAKUCHA"]
+      },
+      {
+        "value": "示させられられる",
+        "desc": "passive",
+        "tag": "v1",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE", "IMPERFECTIVE", "PASSIVE"]
+      },
+      {
+        "value": "示させられさせる",
+        "desc": "causative",
+        "tag": "v1",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE", "IMPERFECTIVE", "CAUSATIVE"]
+      },
+      {
+        "value": "示させられさせられる",
+        "desc": "causative passive",
+        "tag": "v1",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE", "IMPERFECTIVE", "CAUSATIVE_PASSIVE"]
+      },
+      {
+        "value": "示させられさす",
+        "desc": "causative alternative",
+        "tag": "v5s",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE", "IMPERFECTIVE", "CAUSATIVE_ALT"]
+      },
+      { "value": "示させられろ", "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE", "IMPERATIVE"] },
+      { "value": "示させられれば", "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE", "CONDITIONAL"] },
+      { "value": "示させられよう", "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE", "VOLITIONAL"] },
+      { "value": "示させられて", "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE", "TE"] },
+      { "value": "示させられた", "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE", "TA"] },
+      {
+        "value": "示させられたり",
+        "desc": "representative",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE", "TA", "RI"]
+      },
+      {
+        "value": "示させられたら",
+        "desc": "if/when ~",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE", "TA", "RA"]
+      },
+      {
+        "value": "示させられたろう",
+        "desc": "past volitional, rare",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE", "TA", "ROU"]
+      }
+    ]
+  },
+  {
+    "value": "示さす",
+    "desc": "causative alternative",
+    "tag": "v5s",
+    "path": ["IMPERFECTIVE", "CAUSATIVE_ALT"],
+    "derivationsToCheck": [
+      { "value": "示さす", "path": ["IMPERFECTIVE", "CAUSATIVE_ALT", "PLAIN"] },
+      { "value": "示さし", "path": ["IMPERFECTIVE", "CAUSATIVE_ALT", "CONJUNCTIVE"] },
+      {
+        "value": "示さしたい",
+        "desc": "speaker's desire",
+        "tag": "adj-i",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_ALT", "CONJUNCTIVE", "TAI"]
+      },
+      {
+        "value": "示さしたがる",
+        "desc": "non-speaker's desire",
+        "tag": "v5r",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_ALT", "CONJUNCTIVE", "TAGARU"]
+      },
+      {
+        "value": "示さしながら",
+        "desc": "while ~ing",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_ALT", "CONJUNCTIVE", "NAGARA"]
+      },
+      {
+        "value": "示さしがち",
+        "desc": "tends to ~",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_ALT", "CONJUNCTIVE", "GACHI"]
+      },
+      {
+        "value": "示さしかた",
+        "desc": "way of ~ing",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_ALT", "CONJUNCTIVE", "KATA"]
+      },
+      {
+        "value": "示さしそう",
+        "desc": "looks to be ~",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_ALT", "CONJUNCTIVE", "SOU"]
+      },
+      {
+        "value": "示さしつつ",
+        "desc": "continuing to ~",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_ALT", "CONJUNCTIVE", "TSUTSU"]
+      },
+      {
+        "value": "示さしやがる",
+        "desc": "yakuza rude",
+        "tag": "v5r",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_ALT", "CONJUNCTIVE", "YAGARU"]
+      },
+      {
+        "value": "示さしすぎる",
+        "desc": "excess ~",
+        "tag": "v1",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_ALT", "CONJUNCTIVE", "SUGIRU"]
+      },
+      {
+        "value": "示さしやすい",
+        "desc": "easy to ~",
+        "tag": "adj-i",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_ALT", "CONJUNCTIVE", "YASUI"]
+      },
+      {
+        "value": "示さしにくい",
+        "desc": "difficult to ~",
+        "tag": "adj-i",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_ALT", "CONJUNCTIVE", "NIKUI"]
+      },
+      {
+        "value": "示さします",
+        "desc": "non-past",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_ALT", "POLITE", "MASU"]
+      },
+      {
+        "value": "示さしません",
+        "desc": "negative",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_ALT", "POLITE", "MASEN"]
+      },
+      {
+        "value": "示さしませぬ",
+        "desc": "negative, archaic",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_ALT", "POLITE", "MASENU"]
+      },
+      {
+        "value": "示さしました",
+        "desc": "past",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_ALT", "POLITE", "MASHITA"]
+      },
+      {
+        "value": "示さしましょう",
+        "desc": "volitional",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_ALT", "POLITE", "MASHOU"]
+      },
+      {
+        "value": "示さしまして",
+        "desc": "conjunctive",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_ALT", "POLITE", "MASHITE"]
+      },
+      {
+        "value": "示さしますれば",
+        "desc": "conditional",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_ALT", "POLITE", "MASUREBA"]
+      },
+      {
+        "value": "示さしなさい",
+        "desc": "authoritative",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_ALT", "POLITE", "NASAI"]
+      },
+      {
+        "value": "示さしな",
+        "desc": "imperative informal",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_ALT", "POLITE", "NA"]
+      },
+      { "value": "示ささ", "path": ["IMPERFECTIVE", "CAUSATIVE_ALT", "IMPERFECTIVE"] },
+      {
+        "value": "示ささない",
+        "desc": "negative",
+        "tag": "adj-i",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_ALT", "IMPERFECTIVE", "NAI"]
+      },
+      {
+        "value": "示ささん",
+        "desc": "curt negative, informal, archaic",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_ALT", "IMPERFECTIVE", "N"]
+      },
+      {
+        "value": "示ささず",
+        "desc": "negative perfect",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_ALT", "IMPERFECTIVE", "ZU"]
+      },
+      {
+        "value": "示ささないで",
+        "desc": "without ~ing",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_ALT", "IMPERFECTIVE", "NAIDE"]
+      },
+      {
+        "value": "示ささずに",
+        "desc": "without ~ing, formal",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_ALT", "IMPERFECTIVE", "ZUNI"]
+      },
+      {
+        "value": "示ささなくて",
+        "desc": "negative て form",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_ALT", "IMPERFECTIVE", "TE"]
+      },
+      {
+        "value": "示ささなかった",
+        "desc": "negative た form",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_ALT", "IMPERFECTIVE", "TA"]
+      },
+      {
+        "value": "示ささなければ",
+        "desc": "negative conditional",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_ALT", "IMPERFECTIVE", "CONDITIONAL"]
+      },
+      {
+        "value": "示ささなきゃ",
+        "desc": "obligation, informal",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_ALT", "IMPERFECTIVE", "NAKYA"]
+      },
+      {
+        "value": "示ささなくちゃ",
+        "desc": "obligation, informal",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_ALT", "IMPERFECTIVE", "NAKUCHA"]
+      },
+      {
+        "value": "示さされる",
+        "desc": "passive",
+        "tag": "v1",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_ALT", "IMPERFECTIVE", "PASSIVE"]
+      },
+      {
+        "value": "示ささせる",
+        "desc": "causative",
+        "tag": "v1",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_ALT", "IMPERFECTIVE", "CAUSATIVE"]
+      },
+      {
+        "value": "示ささせられる",
+        "desc": "causative passive",
+        "tag": "v1",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_ALT", "IMPERFECTIVE", "CAUSATIVE_PASSIVE"]
+      },
+      {
+        "value": "示ささす",
+        "desc": "causative alternative",
+        "tag": "v5s",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_ALT", "IMPERFECTIVE", "CAUSATIVE_ALT"]
+      },
+      {
+        "value": "示ささされる",
+        "desc": "causative passive alternative",
+        "tag": "v1",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_ALT", "IMPERFECTIVE", "CAUSATIVE_PASSIVE_ALT"]
+      },
+      { "value": "示させ", "path": ["IMPERFECTIVE", "CAUSATIVE_ALT", "IMPERATIVE"] },
+      { "value": "示させば", "path": ["IMPERFECTIVE", "CAUSATIVE_ALT", "CONDITIONAL"] },
+      { "value": "示させる", "path": ["IMPERFECTIVE", "CAUSATIVE_ALT", "POTENTIAL"], "tag": "v1" },
+      { "value": "示さそう", "path": ["IMPERFECTIVE", "CAUSATIVE_ALT", "VOLITIONAL"] },
+      { "value": "示さして", "path": ["IMPERFECTIVE", "CAUSATIVE_ALT", "TE"] },
+      { "value": "示さした", "path": ["IMPERFECTIVE", "CAUSATIVE_ALT", "TA"] },
+      {
+        "value": "示さしたり",
+        "desc": "representative",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_ALT", "TA", "RI"]
+      },
+      {
+        "value": "示さしたら",
+        "desc": "if/when ~",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_ALT", "TA", "RA"]
+      },
+      {
+        "value": "示さしたろう",
+        "desc": "past volitional, rare",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_ALT", "TA", "ROU"]
+      }
+    ]
+  },
+  {
+    "value": "示さされる",
+    "desc": "causative passive alternative",
+    "tag": "v1",
+    "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE_ALT"],
+    "derivationsToCheck": [
+      { "value": "示さされる", "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE_ALT", "PLAIN"] },
+      { "value": "示さされ", "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE_ALT", "CONJUNCTIVE"] },
+      {
+        "value": "示さされたい",
+        "desc": "speaker's desire",
+        "tag": "adj-i",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE_ALT", "CONJUNCTIVE", "TAI"]
+      },
+      {
+        "value": "示さされたがる",
+        "desc": "non-speaker's desire",
+        "tag": "v5r",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE_ALT", "CONJUNCTIVE", "TAGARU"]
+      },
+      {
+        "value": "示さされながら",
+        "desc": "while ~ing",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE_ALT", "CONJUNCTIVE", "NAGARA"]
+      },
+      {
+        "value": "示さされがち",
+        "desc": "tends to ~",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE_ALT", "CONJUNCTIVE", "GACHI"]
+      },
+      {
+        "value": "示さされかた",
+        "desc": "way of ~ing",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE_ALT", "CONJUNCTIVE", "KATA"]
+      },
+      {
+        "value": "示さされそう",
+        "desc": "looks to be ~",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE_ALT", "CONJUNCTIVE", "SOU"]
+      },
+      {
+        "value": "示さされつつ",
+        "desc": "continuing to ~",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE_ALT", "CONJUNCTIVE", "TSUTSU"]
+      },
+      {
+        "value": "示さされやがる",
+        "desc": "yakuza rude",
+        "tag": "v5r",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE_ALT", "CONJUNCTIVE", "YAGARU"]
+      },
+      {
+        "value": "示さされすぎる",
+        "desc": "excess ~",
+        "tag": "v1",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE_ALT", "CONJUNCTIVE", "SUGIRU"]
+      },
+      {
+        "value": "示さされやすい",
+        "desc": "easy to ~",
+        "tag": "adj-i",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE_ALT", "CONJUNCTIVE", "YASUI"]
+      },
+      {
+        "value": "示さされにくい",
+        "desc": "difficult to ~",
+        "tag": "adj-i",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE_ALT", "CONJUNCTIVE", "NIKUI"]
+      },
+      {
+        "value": "示さされます",
+        "desc": "non-past",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE_ALT", "POLITE", "MASU"]
+      },
+      {
+        "value": "示さされません",
+        "desc": "negative",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE_ALT", "POLITE", "MASEN"]
+      },
+      {
+        "value": "示さされませぬ",
+        "desc": "negative, archaic",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE_ALT", "POLITE", "MASENU"]
+      },
+      {
+        "value": "示さされました",
+        "desc": "past",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE_ALT", "POLITE", "MASHITA"]
+      },
+      {
+        "value": "示さされましょう",
+        "desc": "volitional",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE_ALT", "POLITE", "MASHOU"]
+      },
+      {
+        "value": "示さされまして",
+        "desc": "conjunctive",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE_ALT", "POLITE", "MASHITE"]
+      },
+      {
+        "value": "示さされますれば",
+        "desc": "conditional",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE_ALT", "POLITE", "MASUREBA"]
+      },
+      {
+        "value": "示さされなさい",
+        "desc": "authoritative",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE_ALT", "POLITE", "NASAI"]
+      },
+      {
+        "value": "示さされな",
+        "desc": "imperative informal",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE_ALT", "POLITE", "NA"]
+      },
+      {
+        "value": "示さされない",
+        "desc": "negative",
+        "tag": "adj-i",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE_ALT", "IMPERFECTIVE", "NAI"]
+      },
+      {
+        "value": "示さされん",
+        "desc": "curt negative, informal, archaic",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE_ALT", "IMPERFECTIVE", "N"]
+      },
+      {
+        "value": "示さされず",
+        "desc": "negative perfect",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE_ALT", "IMPERFECTIVE", "ZU"]
+      },
+      {
+        "value": "示さされないで",
+        "desc": "without ~ing",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE_ALT", "IMPERFECTIVE", "NAIDE"]
+      },
+      {
+        "value": "示さされずに",
+        "desc": "without ~ing, formal",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE_ALT", "IMPERFECTIVE", "ZUNI"]
+      },
+      {
+        "value": "示さされなくて",
+        "desc": "negative て form",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE_ALT", "IMPERFECTIVE", "TE"]
+      },
+      {
+        "value": "示さされなかった",
+        "desc": "negative た form",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE_ALT", "IMPERFECTIVE", "TA"]
+      },
+      {
+        "value": "示さされなければ",
+        "desc": "negative conditional",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE_ALT", "IMPERFECTIVE", "CONDITIONAL"]
+      },
+      {
+        "value": "示さされなきゃ",
+        "desc": "obligation, informal",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE_ALT", "IMPERFECTIVE", "NAKYA"]
+      },
+      {
+        "value": "示さされなくちゃ",
+        "desc": "obligation, informal",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE_ALT", "IMPERFECTIVE", "NAKUCHA"]
+      },
+      {
+        "value": "示さされられる",
+        "desc": "passive",
+        "tag": "v1",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE_ALT", "IMPERFECTIVE", "PASSIVE"]
+      },
+      {
+        "value": "示さされさせる",
+        "desc": "causative",
+        "tag": "v1",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE_ALT", "IMPERFECTIVE", "CAUSATIVE"]
+      },
+      {
+        "value": "示さされさせられる",
+        "desc": "causative passive",
+        "tag": "v1",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE_ALT", "IMPERFECTIVE", "CAUSATIVE_PASSIVE"]
+      },
+      {
+        "value": "示さされさす",
+        "desc": "causative alternative",
+        "tag": "v5s",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE_ALT", "IMPERFECTIVE", "CAUSATIVE_ALT"]
+      },
+      { "value": "示さされろ", "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE_ALT", "IMPERATIVE"] },
+      { "value": "示さされれば", "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE_ALT", "CONDITIONAL"] },
+      { "value": "示さされよう", "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE_ALT", "VOLITIONAL"] },
+      { "value": "示さされて", "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE_ALT", "TE"] },
+      { "value": "示さされた", "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE_ALT", "TA"] },
+      {
+        "value": "示さされたり",
+        "desc": "representative",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE_ALT", "TA", "RI"]
+      },
+      {
+        "value": "示さされたら",
+        "desc": "if/when ~",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE_ALT", "TA", "RA"]
+      },
+      {
+        "value": "示さされたろう",
+        "desc": "past volitional, rare",
+        "path": ["IMPERFECTIVE", "CAUSATIVE_PASSIVE_ALT", "TA", "ROU"]
+      }
+    ]
+  },
+  { "value": "示せ", "path": ["IMPERATIVE"] },
+  { "value": "示せば", "path": ["CONDITIONAL"] },
+  {
+    "value": "示せる",
+    "path": ["POTENTIAL"],
+    "tag": "v1",
+    "derivationsToCheck": [
+      { "value": "示せる", "path": ["POTENTIAL", "PLAIN"] },
+      { "value": "示せ", "path": ["POTENTIAL", "CONJUNCTIVE"] },
+      {
+        "value": "示せたい",
+        "desc": "speaker's desire",
+        "tag": "adj-i",
+        "path": ["POTENTIAL", "CONJUNCTIVE", "TAI"]
+      },
+      {
+        "value": "示せたがる",
+        "desc": "non-speaker's desire",
+        "tag": "v5r",
+        "path": ["POTENTIAL", "CONJUNCTIVE", "TAGARU"]
+      },
+      {
+        "value": "示せながら",
+        "desc": "while ~ing",
+        "path": ["POTENTIAL", "CONJUNCTIVE", "NAGARA"]
+      },
+      { "value": "示せがち", "desc": "tends to ~", "path": ["POTENTIAL", "CONJUNCTIVE", "GACHI"] },
+      { "value": "示せかた", "desc": "way of ~ing", "path": ["POTENTIAL", "CONJUNCTIVE", "KATA"] },
+      { "value": "示せそう", "desc": "looks to be ~", "path": ["POTENTIAL", "CONJUNCTIVE", "SOU"] },
+      {
+        "value": "示せつつ",
+        "desc": "continuing to ~",
+        "path": ["POTENTIAL", "CONJUNCTIVE", "TSUTSU"]
+      },
+      {
+        "value": "示せやがる",
+        "desc": "yakuza rude",
+        "tag": "v5r",
+        "path": ["POTENTIAL", "CONJUNCTIVE", "YAGARU"]
+      },
+      {
+        "value": "示せすぎる",
+        "desc": "excess ~",
+        "tag": "v1",
+        "path": ["POTENTIAL", "CONJUNCTIVE", "SUGIRU"]
+      },
+      {
+        "value": "示せやすい",
+        "desc": "easy to ~",
+        "tag": "adj-i",
+        "path": ["POTENTIAL", "CONJUNCTIVE", "YASUI"]
+      },
+      {
+        "value": "示せにくい",
+        "desc": "difficult to ~",
+        "tag": "adj-i",
+        "path": ["POTENTIAL", "CONJUNCTIVE", "NIKUI"]
+      },
+      { "value": "示せます", "desc": "non-past", "path": ["POTENTIAL", "POLITE", "MASU"] },
+      { "value": "示せません", "desc": "negative", "path": ["POTENTIAL", "POLITE", "MASEN"] },
+      {
+        "value": "示せませぬ",
+        "desc": "negative, archaic",
+        "path": ["POTENTIAL", "POLITE", "MASENU"]
+      },
+      { "value": "示せました", "desc": "past", "path": ["POTENTIAL", "POLITE", "MASHITA"] },
+      { "value": "示せましょう", "desc": "volitional", "path": ["POTENTIAL", "POLITE", "MASHOU"] },
+      { "value": "示せまして", "desc": "conjunctive", "path": ["POTENTIAL", "POLITE", "MASHITE"] },
+      {
+        "value": "示せますれば",
+        "desc": "conditional",
+        "path": ["POTENTIAL", "POLITE", "MASUREBA"]
+      },
+      { "value": "示せなさい", "desc": "authoritative", "path": ["POTENTIAL", "POLITE", "NASAI"] },
+      { "value": "示せな", "desc": "imperative informal", "path": ["POTENTIAL", "POLITE", "NA"] },
+      {
+        "value": "示せない",
+        "desc": "negative",
+        "tag": "adj-i",
+        "path": ["POTENTIAL", "IMPERFECTIVE", "NAI"]
+      },
+      {
+        "value": "示せん",
+        "desc": "curt negative, informal, archaic",
+        "path": ["POTENTIAL", "IMPERFECTIVE", "N"]
+      },
+      {
+        "value": "示せず",
+        "desc": "negative perfect",
+        "path": ["POTENTIAL", "IMPERFECTIVE", "ZU"]
+      },
+      {
+        "value": "示せないで",
+        "desc": "without ~ing",
+        "path": ["POTENTIAL", "IMPERFECTIVE", "NAIDE"]
+      },
+      {
+        "value": "示せずに",
+        "desc": "without ~ing, formal",
+        "path": ["POTENTIAL", "IMPERFECTIVE", "ZUNI"]
+      },
+      {
+        "value": "示せなくて",
+        "desc": "negative て form",
+        "path": ["POTENTIAL", "IMPERFECTIVE", "TE"]
+      },
+      {
+        "value": "示せなかった",
+        "desc": "negative た form",
+        "path": ["POTENTIAL", "IMPERFECTIVE", "TA"]
+      },
+      {
+        "value": "示せなければ",
+        "desc": "negative conditional",
+        "path": ["POTENTIAL", "IMPERFECTIVE", "CONDITIONAL"]
+      },
+      {
+        "value": "示せなきゃ",
+        "desc": "obligation, informal",
+        "path": ["POTENTIAL", "IMPERFECTIVE", "NAKYA"]
+      },
+      {
+        "value": "示せなくちゃ",
+        "desc": "obligation, informal",
+        "path": ["POTENTIAL", "IMPERFECTIVE", "NAKUCHA"]
+      },
+      {
+        "value": "示せられる",
+        "desc": "passive",
+        "tag": "v1",
+        "path": ["POTENTIAL", "IMPERFECTIVE", "PASSIVE"]
+      },
+      {
+        "value": "示せさせる",
+        "desc": "causative",
+        "tag": "v1",
+        "path": ["POTENTIAL", "IMPERFECTIVE", "CAUSATIVE"]
+      },
+      {
+        "value": "示せさせられる",
+        "desc": "causative passive",
+        "tag": "v1",
+        "path": ["POTENTIAL", "IMPERFECTIVE", "CAUSATIVE_PASSIVE"]
+      },
+      {
+        "value": "示せさす",
+        "desc": "causative alternative",
+        "tag": "v5s",
+        "path": ["POTENTIAL", "IMPERFECTIVE", "CAUSATIVE_ALT"]
+      },
+      { "value": "示せろ", "path": ["POTENTIAL", "IMPERATIVE"] },
+      { "value": "示せれば", "path": ["POTENTIAL", "CONDITIONAL"] },
+      { "value": "示せよう", "path": ["POTENTIAL", "VOLITIONAL"] },
+      { "value": "示せて", "path": ["POTENTIAL", "TE"] },
+      { "value": "示せた", "path": ["POTENTIAL", "TA"] },
+      { "value": "示せたり", "desc": "representative", "path": ["POTENTIAL", "TA", "RI"] },
+      { "value": "示せたら", "desc": "if/when ~", "path": ["POTENTIAL", "TA", "RA"] },
+      { "value": "示せたろう", "desc": "past volitional, rare", "path": ["POTENTIAL", "TA", "ROU"] }
+    ]
+  },
+  { "value": "示そう", "path": ["VOLITIONAL"] },
+  { "value": "示して", "path": ["TE"] },
+  { "value": "示した", "path": ["TA"] },
+  { "value": "示したり", "desc": "representative", "path": ["TA", "RI"] },
+  { "value": "示したら", "desc": "if/when ~", "path": ["TA", "RA"] },
+  { "value": "示したろう", "desc": "past volitional, rare", "path": ["TA", "ROU"] }
+]

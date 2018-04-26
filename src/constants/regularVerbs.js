@@ -1,20 +1,14 @@
-const { partialRight, flowRight, last, flattenDeep, uniqBy, sortBy } = require('lodash');
+const {
+  append,
+  getStem,
+  derivePassive,
+  deriveCausative,
+  deriveCausativePassive,
+  deriveCausativeAlt,
+  deriveCausativePassiveAlt,
+} = require('../utils');
 
 const REGULAR_TAGS = ['v5u', 'v5t', 'v5r', 'v5n', 'v5m', 'v5b', 'v5k', 'v5g', 'v5s', 'v1'];
-const IRREGULAR_TAGS = ['vs', 'vk', 'v5k-s'];
-const TAGS = [...REGULAR_TAGS, ...IRREGULAR_TAGS];
-
-const isV1 = (tag) => tag === 'v1';
-const derivePassive = ({ value, tag }) => `${value}${isV1(tag) ? 'ら' : ''}れる`;
-const deriveCausative = ({ value, tag }) => `${value}${isV1(tag) ? 'さ' : ''}せる`;
-const deriveCausativePassive = ({ value, tag }) => `${value}${isV1(tag) ? 'さ' : ''}せられる`;
-const deriveCausativeAlt = ({ value, tag }) => `${value}${isV1(tag) ? 'さ' : ''}す`;
-const deriveCausativePassiveAlt = ({ value, tag }) => (isV1(tag) ? '' : `${value}される`);
-
-const append = (str = '') => ({ value = '' } = {}) => value + str;
-const strip = (str = '') => ({ value = '' } = {}) => value.replace(RegExp(`/${str}$/i`), '');
-const isIrregularVerb = (tag) => IRREGULAR_TAGS.includes(tag);
-const isRegularVerb = (tag) => REGULAR_TAGS.includes(tag);
 
 const STEMS = {
   PLAIN: {
@@ -139,137 +133,134 @@ const STEMS = {
   },
 };
 
-const getBase = ({ value = '', tag = '' } = {}) => {
-  const canDerive = isRegularVerb(tag) && Object.values(STEMS.PLAIN).includes(last(value));
-  if (!canDerive) throw Error('Cannot derive base');
-  return value.slice(0, -1);
-};
-
-const getStem = ({ form = '', tag = '' } = {}) => append(STEMS[form][tag])({ value: '' });
-
 //-----------------------------------------------------------------------------
 //  PLAIN FORM 辞書形 じしょけい
 //-----------------------------------------------------------------------------
+/*
+  const NA = { derive: append('な'), desc: 'negative imperative', form: 'NA',  };
+  const TO = { derive: append('と'), desc: 'if ~ definitely...', form: 'TO',  };
+  const GA_HAYAI_KA = { derive: append('がはやいか'), desc: 'as soon as', form: 'GA_HAYAI_KA',  };
+  const TOMONAKU = { derive: append('ともなく'), desc: 'without intent', form: 'TOMONAKU',  };
+  const BEKI = { derive: append('べき'), desc: 'idealistic should', form: 'BEKI',  };
+  const MAI = { derive: append('まい'), desc: 'negative volitional, formal', form: 'MAI',  };
+  const MITAI = { derive: append('みたい'), desc: 'seems that ~', form: 'MITAI', tag: 'adj-i' };
+  const SOU = { derive: append('そう'), desc: 'claimed to be ~', form: 'SOU',  };
+  const RASHII = { derive: append('らしい'), desc: 'apparently', form: 'RASHII', tag: 'adj-i' };
+  const HAZU = { derive: append('はず'), desc: 'expectation', form: 'HAZU',  };
+  const NARA = { derive: append('なら'), desc: 'contextual if', form: 'NARA',  };
+  const TSUMORI = { derive: append('つもり'), desc: 'intention', form: 'TSUMORI',  },;
+*/
 const PLAIN = {
   form: 'PLAIN',
-  derive: getStem,
+  derive: getStem(STEMS),
   desc: 'non-past',
-  forms: {
-    /*    NA: { derive: append('な'), desc: 'negative imperative', form: 'NA',  },
-    TO: { derive: append('と'), desc: 'if ~ definitely...', form: 'TO',  },
-    GA_HAYAI_KA: { derive: append('がはやいか'), desc: 'as soon as', form: 'GA_HAYAI_KA',  },
-    TOMONAKU: { derive: append('ともなく'), desc: 'without intent', form: 'TOMONAKU',  },
-    BEKI: { derive: append('べき'), desc: 'idealistic should', form: 'BEKI',  },
-    MAI: { derive: append('まい'), desc: 'negative volitional, formal', form: 'MAI',  },
-    MITAI: { derive: append('みたい'), desc: 'seems that ~', form: 'MITAI', tag: 'adj-i' },
-    SOU: { derive: append('そう'), desc: 'claimed to be ~', form: 'SOU',  },
-    RASHII: { derive: append('らしい'), desc: 'apparently', form: 'RASHII', tag: 'adj-i' },
-    HAZU: { derive: append('はず'), desc: 'expectation', form: 'HAZU',  },
-    NARA: { derive: append('なら'), desc: 'contextual if', form: 'NARA',  },
-    TSUMORI: { derive: append('つもり'), desc: 'intention', form: 'TSUMORI',  }, */
-  },
+  forms: [],
 };
 
 //-----------------------------------------------------------------------------
 //  CONJUNCTIVE 連用形 れんようけい
+//  + POLITE
 //-----------------------------------------------------------------------------
+const TAI = { derive: append('たい'), desc: "speaker's desire", form: 'TAI', tag: 'adj-i' };
+const TAGARU = {
+  derive: append('たがる'),
+  desc: "non-speaker's desire",
+  form: 'TAGARU',
+  tag: 'v5r',
+};
+const NAGARA = { derive: append('ながら'), desc: 'while ~ing', form: 'NAGARA' };
+const GACHI = { derive: append('がち'), desc: 'tends to ~', form: 'GACHI' };
+const KATA = { derive: append('かた'), desc: 'way of ~ing', form: 'KATA' };
+const SAE = { derive: append('さえ'), desc: 'minimum requirement', form: 'SAE' };
+const SOU = { derive: append('そう'), desc: 'looks to be ~', form: 'SOU' };
+const TSUTSU = { derive: append('つつ'), desc: 'continuing to ~', form: 'TSUTSU' };
+const YAGARU = { derive: append('やがる'), desc: 'yakuza rude', form: 'YAGARU', tag: 'v5r' };
+const SUGIRU = { derive: append('すぎる'), desc: 'excess ~', form: 'SUGIRU', tag: 'v1' };
+const YASUI = { derive: append('やすい'), desc: 'easy to ~', form: 'YASUI', tag: 'adj-i' };
+const NIKUI = { derive: append('にくい'), desc: 'difficult to ~', form: 'NIKUI', tag: 'adj-i' };
+
 const CONJUNCTIVE = {
   form: 'CONJUNCTIVE',
-  derive: getStem,
+  derive: getStem(STEMS),
   desc: 'conjunctive',
-  forms: {
-    TAI: { derive: append('たい'), desc: "speaker's desire", form: 'TAI', tag: 'adj-i' },
-    TAGARU: { derive: append('たがる'), desc: "non-speaker's desire", form: 'TAGARU', tag: 'v5r' },
-    NAGARA: { derive: append('ながら'), desc: 'while ~ing', form: 'NAGARA' },
-    GACHI: { derive: append('がち'), desc: 'tends to ~', form: 'GACHI' },
-    KATA: { derive: append('かた'), desc: 'way of ~ing', form: 'KATA' },
-    SOU: { derive: append('そう'), desc: 'looks to be ~', form: 'SOU' },
-    TSUTSU: { derive: append('つつ'), desc: 'continuing to ~', form: 'TSUTSU' },
-    YAGARU: { derive: append('やがる'), desc: 'yakuza rude', form: 'YAGARU', tag: 'v5r' },
-    SUGIRU: { derive: append('すぎる'), desc: 'excess ~', form: 'SUGIRU', tag: 'v5r' },
-    YASUI: { derive: append('やすい'), desc: 'easy to ~', form: 'YASUI', tag: 'adj-i' },
-    NIKUI: { derive: append('にくい'), desc: 'difficult to ~', form: 'NIKUI', tag: 'adj-i' },
-  },
+  forms: [TAI, TAGARU, NAGARA, GACHI, KATA, SAE, SOU, TSUTSU, YAGARU, SUGIRU, YASUI, NIKUI],
 };
+
+const MASU = { derive: append('ます'), form: 'MASU', desc: 'non-past' };
+const MASEN = { derive: append('ません'), form: 'MASEN', desc: 'negative' };
+const MASENU = { derive: append('ませぬ'), form: 'MASENU', desc: 'negative, archaic' };
+const MASHITA = { derive: append('ました'), form: 'MASHITA', desc: 'past' };
+const MASHOU = { derive: append('ましょう'), form: 'MASHOU', desc: 'volitional' };
+const MASHITE = { derive: append('まして'), form: 'MASHITE', desc: 'conjunctive' };
+const MASUREBA = { derive: append('ますれば'), form: 'MASUREBA', desc: 'conditional' };
+const NASAI = { derive: append('なさい'), form: 'NASAI', desc: 'authoritative' };
+const NA = { derive: append('な'), form: 'NA', desc: 'imperative informal' };
 
 const POLITE = {
   form: 'POLITE',
-  derive: getStem,
+  derive: getStem(STEMS),
   desc: 'polite',
-  forms: {
-    MASU: { derive: append('ます'), form: 'MASU', desc: 'non-past' },
-    MASEN: { derive: append('ません'), form: 'MASEN', desc: 'negative' },
-    MASENU: { derive: append('ませぬ'), form: 'MASENU', desc: 'negative, archaic' },
-    MASHITA: { derive: append('ました'), form: 'MASHITA', desc: 'past' },
-    MASHOU: { derive: append('ましょう'), form: 'MASHOU', desc: 'volitional' },
-    MASHITE: { derive: append('まして'), form: 'MASHITE', desc: 'conjunctive' },
-    MASUREBA: { derive: append('ますれば'), form: 'MASUREBA', desc: 'conditional' },
-    NASAI: { derive: append('なさい'), form: 'NASAI', desc: 'authoritative' },
-    NA: { derive: append('な'), form: 'NA', desc: 'imperative informal' },
-  },
+  forms: [MASU, MASEN, MASENU, MASHITA, MASHOU, MASHITE, MASUREBA, NASAI, NA],
 };
 
 //-----------------------------------------------------------------------------
 //  IMPERFECTIVE 未然形 みぜんけい
 //-----------------------------------------------------------------------------
+const NAI = { derive: append('ない'), form: 'NAI', desc: 'negative', tag: 'adj-i' };
+const N = { derive: append('ん'), form: 'N', desc: 'curt negative, informal, archaic' };
+const ZU = { derive: append('ず'), form: 'ZU', desc: 'negative perfect' };
+const NAIDE = { derive: append('ないで'), form: 'NAIDE', desc: 'without ~ing' };
+const ZUNI = { derive: append('ずに'), form: 'ZUNI', desc: 'without ~ing, formal' };
+const NAKUTE = { derive: append('なくて'), form: 'TE', desc: 'negative て form' };
+const NAKATTA = { derive: append('なかった'), form: 'TA', desc: 'negative た form' };
+const NAKEREBA = { derive: append('なければ'), form: 'CONDITIONAL', desc: 'negative conditional' };
+const NAKYA = { derive: append('なきゃ'), form: 'NAKYA', desc: 'obligation, informal' };
+const NAKUCHA = { derive: append('なくちゃ'), form: 'NAKUCHA', desc: 'obligation, informal' };
+const PASSIVE = { derive: derivePassive, form: 'PASSIVE', desc: 'passive', tag: 'v1' };
+const CAUSATIVE = { derive: deriveCausative, form: 'CAUSATIVE', desc: 'causative', tag: 'v1' };
+const CAUSATIVE_PASSIVE = {
+  derive: deriveCausativePassive,
+  form: 'CAUSATIVE_PASSIVE',
+  desc: 'causative passive',
+  tag: 'v1',
+};
+const CAUSATIVE_ALT = {
+  derive: deriveCausativeAlt,
+  form: 'CAUSATIVE_ALT',
+  desc: 'causative alternative',
+  tag: 'v5s',
+};
+const CAUSATIVE_PASSIVE_ALT = {
+  derive: deriveCausativePassiveAlt,
+  form: 'CAUSATIVE_PASSIVE_ALT',
+  desc: 'causative passive alternative',
+  tag: 'v1',
+};
+/*
+  const NAIDE_KUDASAI = { derive: append('ないでください'), form: 'NAIDE_KUDASAI', desc: 'negative request' };
+  const NAITO = { derive: append('ないと'), form: 'NAITO', desc: 'obligation, informal' }
+*/
 const IMPERFECTIVE = {
   form: 'IMPERFECTIVE',
-  derive: getStem,
+  derive: getStem(STEMS),
   desc: 'imperfective',
-  forms: {
-    NAI: { derive: append('ない'), form: 'NAI', desc: 'negative', tag: ' adj-i' },
-    N: { derive: append('ん'), form: 'N', desc: 'curt negative, informal, archaic' },
-    ZU: { derive: append('ず'), form: 'ZU', desc: 'negative perfect' },
-    NAIDE: { derive: append('ないで'), form: 'NAIDE', desc: 'without ~ing' },
-    ZUNI: { derive: append('ずに'), form: 'ZUNI', desc: 'without ~ing, formal' },
-    NAKUTE: { derive: append('なくて'), form: 'TE', desc: 'negative て form' },
-    NAKATTA: { derive: append('なかった'), form: 'TA', desc: 'negative た form' },
-    /*  NAIDE_KUDASAI: {
-      derive: append('ないでください'),
-      form: 'NAIDE_KUDASAI',
-      desc: 'negative request'
-    }, */
-    NAKEREBA: {
-      derive: append('なければ'),
-      form: 'CONDITIONAL',
-      desc: 'negative conditional',
-    },
-    NAKYA: {
-      derive: append('なきゃ'),
-      form: 'NAKYA',
-      desc: 'obligation, informal',
-    },
-    /*     NAITO: {
-      derive: append('ないと'),
-      form: 'NAITO',
-      desc: 'obligation, informal'
-    }, */
-    NAKUCHA: {
-      derive: append('なくちゃ'),
-      form: 'NAKUCHA',
-      desc: 'obligation, informal',
-    },
-    PASSIVE: { derive: derivePassive, form: 'PASSIVE', desc: 'passive', tag: 'v1' },
-    CAUSATIVE: { derive: deriveCausative, form: 'CAUSATIVE', desc: 'causative', tag: ' v1' },
-    CAUSATIVE_PASSIVE: {
-      derive: deriveCausativePassive,
-      form: 'CAUSATIVE_PASSIVE',
-      desc: 'causative passive',
-      tag: ' v1',
-    },
-    CAUSATIVE_ALT: {
-      derive: deriveCausativeAlt,
-      form: 'CAUSATIVE_ALT',
-      desc: 'causative alternative',
-      tag: ' v5s',
-    },
-    CAUSATIVE_PASSIVE_ALT: {
-      derive: deriveCausativePassiveAlt,
-      form: 'CAUSATIVE_PASSIVE_ALT',
-      desc: 'causative passive alternative',
-      tag: ' v1',
-    },
-  },
+  forms: [
+    NAI,
+    N,
+    ZU,
+    NAIDE,
+    ZUNI,
+    NAKUTE,
+    NAKATTA,
+    NAKEREBA,
+    NAKYA,
+    NAKUCHA,
+    PASSIVE,
+    CAUSATIVE,
+    CAUSATIVE_PASSIVE,
+    CAUSATIVE_ALT,
+    CAUSATIVE_PASSIVE_ALT,
+  ],
 };
 
 //-----------------------------------------------------------------------------
@@ -277,30 +268,32 @@ const IMPERFECTIVE = {
 //-----------------------------------------------------------------------------
 const IMPERATIVE = {
   form: 'IMPERATIVE',
-  derive: getStem,
+  derive: getStem(STEMS),
   desc: 'imperative',
-  forms: {},
+  forms: [],
 };
 
 //-----------------------------------------------------------------------------
 //   HYPOTHETICAL 仮定形 かていけい
 //-----------------------------------------------------------------------------
+/*
+  const いい = { derive: append('いい'), form: 'いい', desc: 'I should ~' };
+  const よかった = { derive: append('よかった'), form: 'よかった', desc: 'I should have ~' };
+*/
 const CONDITIONAL = {
   form: 'CONDITIONAL',
-  derive: getStem,
+  derive: getStem(STEMS),
   desc: '~ba conditional',
-  forms: {
-    // FIXME: objects
-    /*     いい: 'I should ~',
-    よかった: 'I should have ~', */
-  },
+  forms: [
+    /* いい, よかった */
+  ],
 };
 
 const POTENTIAL = {
   form: 'POTENTIAL',
-  derive: getStem,
+  derive: getStem(STEMS),
   desc: 'potential',
-  forms: {},
+  forms: [],
   tag: 'v1',
 };
 
@@ -309,72 +302,72 @@ const POTENTIAL = {
 //-----------------------------------------------------------------------------
 const VOLITIONAL = {
   form: 'VOLITIONAL',
-  derive: getStem,
+  derive: getStem(STEMS),
   desc: 'volitional',
-  forms: {},
+  forms: [],
 };
 
 //-----------------------------------------------------------------------------
 //  TE テ刑
 //-----------------------------------------------------------------------------
+/*
+  いく: 'changing state', // -> irregular 行く
+  ある: 'changed state', // -> irregular 有る (negative)
+  おり: 'conjunctive, formal',
+  くる: 'state change', // -> irregular vk
+  おる: 'continuous, archaic', // irregular humble 居る
+  とる: 'continuous, archaic, informal', // irregular humble 居る // NOTE: need to slice って・て
+  いる: 'continuous, habitual', // -> v1
+  る: 'continuous, habitual, informal', // -> v1
+  おく: 'preparatory', // v5k
+  く: 'preparatory, informal', // v5k //
+  しまう: 'completed, unintentional', // -> v5u
+  ちゃう: 'completed, unintentional, informal', // -> v5u NOTE: need to slice て・って
+  じゃう: 'completed, unintentional, informal', // -> v5u NOTE: need to slice で・っで
+  よかった: 'glad that...',
+  みる: 'try ~ and see',
+  ほしい: 'favour request',
+  から: 'after ~ing...',
+  はいけない: 'must not ~',
+  はならない: 'must not ~',
+  はだめ: 'must not ~',
+  もかまわない: 'permissive',
+  もいい: 'permissive',
+  いい: 'permissive, informal',
+  すみません: 'apologetic',
+  も: 'even though ~',
+  ください: 'request', // -> honorific irregular
+  あげる: 'benefit',
+  げる: 'benefit, informal, simplified',
+  くれる: 'benefit',
+  もらう: 'benefit',
+*/
 const TE = {
   form: 'TE',
-  derive: getStem,
+  derive: getStem(STEMS),
   desc: 'te form',
-  forms: {
-    /*     いく: 'changing state', // -> irregular 行く
-    ある: 'changed state', // -> irregular 有る (negative)
-    おり: 'conjunctive, formal',
-    くる: 'state change', // -> irregular vk
-    おる: 'continuous, archaic', // irregular humble 居る
-    とる: 'continuous, archaic, informal', // irregular humble 居る // NOTE: need to slice って・て
-    いる: 'continuous, habitual', // -> v1
-    る: 'continuous, habitual, informal', // -> v1
-    おく: 'preparatory', // v5k
-    く: 'preparatory, informal', // v5k //
-    しまう: 'completed, unintentional', // -> v5u
-    ちゃう: 'completed, unintentional, informal', // -> v5u NOTE: need to slice て・って
-    じゃう: 'completed, unintentional, informal', // -> v5u NOTE: need to slice で・っで
-    よかった: 'glad that...',
-    みる: 'try ~ and see',
-    ほしい: 'favour request',
-    から: 'after ~ing...',
-    はいけない: 'must not ~',
-    はならない: 'must not ~',
-    はだめ: 'must not ~',
-    もかまわない: 'permissive',
-    もいい: 'permissive',
-    いい: 'permissive, informal',
-    すみません: 'apologetic',
-    も: 'even though ~',
-    ください: 'request', // -> honorific irregular
-    あげる: 'benefit',
-    げる: 'benefit, informal, simplified',
-    くれる: 'benefit',
-    もらう: 'benefit', */
-  },
+  forms: [],
 };
 
 //-----------------------------------------------------------------------------
 //  TA タ刑
 //-----------------------------------------------------------------------------
+/*
+  から: '...because ~',
+  ところ: 'just happened',
+  ばかり: 'just happened',
+  ほうがいい: 'suggestive',
+  ことがある: 'past experience',
+  だろう: 'past presumptive',
+*/
+const RI = { derive: append('り'), desc: 'representative', form: 'RI' };
+const RA = { derive: append('ら'), desc: 'if/when ~', form: 'RA' };
+const ROU = { derive: append('ろう'), desc: 'past volitional, rare', form: 'ROU' };
 const TA = {
   form: 'TA',
-  derive: getStem,
+  derive: getStem(STEMS),
   desc: 'ta form',
-  forms: {
-    RI: { derive: append('り'), desc: 'representative', form: 'RI' },
-    RA: { derive: append('ら'), desc: 'if/when ~', form: 'RA' },
-    ROU: { derive: append('ろう'), desc: 'past volitional, rare', form: 'ROU' },
-    /*
-    // FIXME: objects
-    から: '...because ~',
-    ところ: 'just happened',
-    ばかり: 'just happened',
-    ほうがいい: 'suggestive',
-    ことがある: 'past experience',
-    だろう: 'past presumptive', */
-  },
+  forms: [RI, RA, ROU],
 };
 
 const BASE_FORMS = [
@@ -390,52 +383,7 @@ const BASE_FORMS = [
   TA,
 ];
 
-const buildStems = (data = {}) =>
-  BASE_FORMS.reduce((obj, baseForm) => {
-    const stem = baseForm.derive({ ...data, form: baseForm.form });
-    const derivations = Object.values(baseForm.forms).map(({ derive, ...rest }) => ({
-      value: derive({ tag: data.tag, ...baseForm, value: stem }),
-      ...rest,
-    }));
-    const baseDetail = {
-      value: stem,
-      desc: baseForm.desc,
-      form: baseForm.form,
-      derivations,
-    };
-    if (baseForm.tag) {
-      baseDetail.tag = baseForm.tag;
-    }
-    return Object.assign(obj, { [baseForm.form]: baseDetail });
-  }, {});
-
-const buildInflections = (stems, base) => {
-  const addStemToBase = (stem = '') => append(stem)({ value: base });
-  return flowRight(
-    partialRight(uniqBy, 'value'),
-    partialRight(sortBy, ({ value }) => value.length),
-    flattenDeep
-  )(
-    Object.values(stems).map((root) => [
-      { value: addStemToBase(root.value), desc: root.desc, path: [root.form] },
-      ...root.derivations.map((derivation) => ({
-        value: addStemToBase(derivation.value),
-        desc: `${root.desc} + ${derivation.desc}`,
-        path: [root.form, derivation.form],
-      })),
-    ])
-  );
-};
-
-const inflect = ({ value = '', tag = '' } = {}) => {
-  if (!value || !TAGS.includes(tag)) throw Error('A valid value and tag must be provided.');
-  const data = { value, tag };
-  const base = getBase(data);
-  const stems = buildStems(data);
-  const inflections = buildInflections(stems, base);
-
-  return {
-    stems,
-    inflections,
-  };
+module.exports = {
+  REGULAR_TAGS,
+  BASE_FORMS,
 };

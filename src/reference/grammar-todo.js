@@ -1,3 +1,4 @@
+// TODO: peruse this list for any missing inflections
 const N5 = [
   ['だ', 'to be/is'],
   ['です', 'to be/is'],
