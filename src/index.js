@@ -29,7 +29,7 @@ const second = first.map(
 );
 
 const fs = require('fs');
-fs.writeFileSync('derps.json', JSON.stringify(second));
+fs.writeFileSync('test-run.json', JSON.stringify(second));
 
 module.exports = {
   inflect,
