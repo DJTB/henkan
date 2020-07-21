@@ -2,7 +2,7 @@
 
 > Japanese inflector
 
-### --WIP--
+### This project is WIP / Incomplete
 
 [![npm](https://img.shields.io/npm/v/henkan.svg?style=flat-square)](https://www.npmjs.com/package/henkan)
 [![npm](https://img.shields.io/npm/dt/henkan.svg?style=flat-square)](https://npm-stat.com/charts.html?package=henkan&from=2016-04-01)
