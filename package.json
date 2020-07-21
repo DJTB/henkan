@@ -24,7 +24,7 @@
     "dist"
   ],
   "dependencies": {
-    "lodash": "4.17.10"
+    "lodash": "4.17.19"
   },
   "devDependencies": {
     "all-contributors-cli": "^4.5.0",
