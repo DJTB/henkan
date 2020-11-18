@@ -46,7 +46,7 @@
     "nps-utils": "^1.4.0",
     "prettier": "^1.7.4",
     "remove-lockfiles": "^1.4.1",
-    "semantic-release": "^15.1.5",
+    "semantic-release": "^17.2.3",
     "travis-deploy-once": "^4.4.1"
   },
   "config": {
